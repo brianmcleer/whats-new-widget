@@ -1,0 +1,16 @@
+{
+  "announcementId": "2026-05-15-v1",
+  "title": "What's New",
+  "contentMode": "html",
+  "linkUrl": "",
+  "openInNewTab": false,
+  "htmlContent": "<h4>Welcome!</h4><p>Configure this widget in the settings panel.</p>",
+  "displayMode": "popover",
+  "bellColor": "",
+  "dotColor": "",
+  "showDotAlways": false,
+  "icon": "bell-f",
+  "iconSize": 24,
+  "contentWidth": 320,
+  "placement": "auto"
+}

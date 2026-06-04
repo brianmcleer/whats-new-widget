@@ -1,0 +1,20 @@
+{
+  "name": "whats-new",
+  "label": "What's New",
+  "type": "widget",
+  "version": "1.1.0",
+  "exbVersion": "1.20.0",
+  "author": "Brian McLeer and Lucius Creamer",
+  "description": "Notification bell that announces new features and updates to users of an Experience.",
+  "copyright": "",
+  "license": "",
+  "properties": {
+    "supportMultipleInstances": true
+  },
+  "translatedLocales": [ "en" ],
+  "defaultSize": {
+    "width": 60,
+    "height": 60
+  },
+  "icon": "./icon.svg"
+}
