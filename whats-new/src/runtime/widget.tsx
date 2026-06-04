@@ -143,6 +143,11 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                 icon={resolvedIcon as any}
                 scale={iconSize || 'm'}
                 indicator={hasUnseen}
+                style={{
+                    '--calcite-action-corner-radius': 'var(--calcite-button-corner-radius)',
+                    '--calcite-action-indicator-color': config.dotColor || 'var(--calcite-color-status-danger, #d83020)',
+                    '--calcite-action-text-color': config.bellColor || 'var(--calcite-color-text-1)',
+                }}
             />
 
             {isModal && (
