@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css, React } from 'jimu-core'
 import type { AllWidgetSettingProps } from 'jimu-for-builder'
 import {
@@ -96,10 +95,10 @@ const parsePublishedDate = (id: string): string | null => {
     })
 }
 
-export default function Setting(props: AllWidgetSettingProps<IMConfig>) {
+export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
     const { config, onSettingChange, id } = props
 
-    const update = <K extends keyof IMConfig>(key: K, value: IMConfig[K] | string | boolean | number) => {
+    const update = <K extends keyof IMConfig> (key: K, value: IMConfig[K] | string | boolean | number) => {
         onSettingChange({ id, config: config.set(key, value) })
     }
 
@@ -188,7 +187,7 @@ export default function Setting(props: AllWidgetSettingProps<IMConfig>) {
                             value={config.htmlContent || ''}
                             onChange={(e) => { update('htmlContent', e.target.value) }}
                             placeholder={'<h4>May 2026 updates</h4>\n<ul>\n  <li>...</li>\n</ul>'}
-                            style={{ fontFamily: 'monospace', fontSize: 12, width: '100%', height: 200 }}
+                            style={{ fontFamily: 'monospace', fontSize: 12, width: '100%' }}
                         />
                     </SettingRow>
                 )}
@@ -258,7 +257,7 @@ export default function Setting(props: AllWidgetSettingProps<IMConfig>) {
                         />
                         <div css={iconPreview} title="Live preview of the typed icon name and size">
                             <calcite-icon
-                                icon={(config.icon && config.icon.trim()) || 'bell-f'}
+                                icon={(config.icon && config.icon.trim()) || 'bell-f' as any}
                                 scale="m"
                                 style={{
                                     fontSize: `${config.iconSize || 24}px`,
