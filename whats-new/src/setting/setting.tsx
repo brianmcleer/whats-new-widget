@@ -258,12 +258,7 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                         <div css={iconPreview} title="Live preview of the typed icon name and size">
                             <calcite-icon
                                 icon={(config.icon && config.icon.trim()) || 'bell-f' as any}
-                                scale="m"
-                                style={{
-                                    fontSize: `${config.iconSize || 24}px`,
-                                    width: `${config.iconSize || 24}px`,
-                                    height: `${config.iconSize || 24}px`
-                                } as React.CSSProperties}
+                                scale={config.iconSize || 'm'}
                             />
                         </div>
                     </div>
@@ -275,20 +270,18 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                     </div>
                 </SettingRow>
 
-                <SettingRow label="Icon size (px)" flow="wrap">
-                    <NumericInput
-                        value={config.iconSize || 24}
-                        onChange={(value) => { update('iconSize', value) }}
-                        min={12}
-                        max={64}
-                        step={1}
-                        showHandlers
+                <SettingRow label="Icon size" flow="wrap">
+                    <Select
+                        value={config.iconSize || 'm'}
+                        onChange={(e) => { update('iconSize', e.target.value) }}
                         style={{ width: '100%' }}
-                    />
-                    <div css={helperText}>
-                        Pixel size of the icon. Default 24. Use the arrows to bump up or down, or type a number directly.
-                    </div>
+                    >
+                        <Option value="s">Small</Option>
+                        <Option value="m">Medium</Option>
+                        <Option value="l">Large</Option>
+                    </Select>
                 </SettingRow>
+
 
                 <SettingRow label="Icon color" flow="no-wrap">
                     <ColorPicker

@@ -2,6 +2,7 @@ import type { ImmutableObject } from 'seamless-immutable'
 
 export type ContentMode = 'link' | 'html'
 export type DisplayMode = 'popover' | 'modal'
+export type ActionSize = 's' | 'm' | 'l'
 
 export const placements = [
     'auto',
@@ -52,8 +53,8 @@ export interface Config {
     showDotAlways: boolean
     /** calcite-ui-icons name for the bell button */
     icon: string
-    /** Icon size in pixels (default 24) */
-    iconSize: number
+    /** Icon size (small, medium, large) */
+    iconSize: ActionSize
     /** Width of the popover content in pixels (popover mode only) */
     contentWidth: number
     /** Logical placement of the popover relative to the bell (popover mode only) */

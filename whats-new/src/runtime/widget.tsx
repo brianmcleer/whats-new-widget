@@ -14,11 +14,11 @@ import 'calcite-components'
 const { useState, useEffect, useMemo, useCallback } = React
 
 const DEFAULT_ICON = 'bell-f'
-const DEFAULT_ICON_SIZE = 24
+const DEFAULT_ICON_SIZE = 'm'
 const DEFAULT_CONTENT_WIDTH = 320
 const IFRAME_HEIGHT = 400
 
-export default function Widget(props: AllWidgetProps<IMConfig>): React.ReactElement {
+export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactElement {
     const { config, id: widgetId } = props
 
     const [open, setOpen] = useState(false)
@@ -117,7 +117,7 @@ export default function Widget(props: AllWidgetProps<IMConfig>): React.ReactElem
 
     // Indicator dot scales with the icon. Minimum 8px so it stays visible at
     // small icon sizes; about 32% of the icon size otherwise.
-    const dotSize = Math.max(8, Math.round(iconSize * 0.32))
+    // const dotSize = Math.max(8, Math.round(iconSize * 0.32))
     const ariaLabel = hasUnseen
         ? `${config.title || "What's New"}, new updates available`
         : (config.title || "What's New")
@@ -133,68 +133,17 @@ export default function Widget(props: AllWidgetProps<IMConfig>): React.ReactElem
                 padding: '0.25rem'
             }}
         >
-            <style>{`
-        .whats-new-bell-button {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background: transparent;
-          border: none;
-          cursor: pointer;
-          padding: 6px;
-          border-radius: var(--calcite-corner-radius, 3px);
-          transition: background 0.15s ease;
-          line-height: 0;
-        }
-        .whats-new-bell-button:hover {
-          background: var(--calcite-color-foreground-2, rgba(0, 0, 0, 0.06));
-        }
-        .whats-new-bell-button:focus-visible {
-          outline: 2px solid var(--calcite-color-brand, #0079c1);
-          outline-offset: 2px;
-        }
-        .whats-new-bell-button:active {
-          background: var(--calcite-color-foreground-3, rgba(0, 0, 0, 0.12));
-        }
-      `}</style>
-
-            <button
+            <calcite-action
                 id={bellId}
-                type="button"
-                className="whats-new-bell-button"
-                aria-label={ariaLabel}
+                text={config.title || "What's New"}
+                label={ariaLabel}
                 aria-haspopup={isModal ? 'dialog' : 'true'}
                 aria-expanded={open}
                 onClick={handleBellClick}
-                style={{ color: config.bellColor || 'var(--calcite-color-text-1)' }}
-            >
-                <calcite-icon
-                    icon={resolvedIcon as any}
-                    style={{
-                        width: `${iconSize}px`,
-                        height: `${iconSize}px`,
-                        color: 'inherit'
-                    } as React.CSSProperties}
-                />
-                {hasUnseen && (
-                    <span
-                        aria-hidden="true"
-                        style={{
-                            position: 'absolute',
-                            top: '4px',
-                            right: '4px',
-                            width: `${dotSize}px`,
-                            height: `${dotSize}px`,
-                            borderRadius: '50%',
-                            background: config.dotColor || 'var(--calcite-color-status-danger, #d83020)',
-                            border: '1.5px solid var(--calcite-color-foreground-1, #fff)',
-                            boxSizing: 'border-box',
-                            pointerEvents: 'none'
-                        }}
-                    />
-                )}
-            </button>
+                icon={resolvedIcon as any}
+                scale={iconSize || 'm'}
+                indicator={hasUnseen}
+            />
 
             {isModal && (
                 <calcite-dialog
