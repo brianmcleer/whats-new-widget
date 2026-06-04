@@ -309,6 +309,9 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                         aria-label="Notification dot color"
                     />
                 </SettingRow>
+                <div css={helperText}>
+                    Color of the icon and dot are inherited from the theme. Use the color pickers above if you want to customize, which will override the theme color.
+                </div>
 
                 <SettingRow label="Always show dot" flow="no-wrap">
                     <Switch
