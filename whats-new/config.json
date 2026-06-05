@@ -10,7 +10,7 @@
   "dotColor": "",
   "showDotAlways": false,
   "icon": "bell-f",
-  "iconSize": 24,
+  "iconSize": "m",
   "contentWidth": 320,
   "placement": "auto"
 }

@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css, React } from 'jimu-core'
 import type { AllWidgetSettingProps } from 'jimu-for-builder'
 import {
@@ -96,10 +95,10 @@ const parsePublishedDate = (id: string): string | null => {
     })
 }
 
-export default function Setting(props: AllWidgetSettingProps<IMConfig>) {
+export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
     const { config, onSettingChange, id } = props
 
-    const update = <K extends keyof IMConfig>(key: K, value: IMConfig[K] | string | boolean | number) => {
+    const update = <K extends keyof IMConfig> (key: K, value: IMConfig[K] | string | boolean | number) => {
         onSettingChange({ id, config: config.set(key, value) })
     }
 
@@ -188,7 +187,7 @@ export default function Setting(props: AllWidgetSettingProps<IMConfig>) {
                             value={config.htmlContent || ''}
                             onChange={(e) => { update('htmlContent', e.target.value) }}
                             placeholder={'<h4>May 2026 updates</h4>\n<ul>\n  <li>...</li>\n</ul>'}
-                            style={{ fontFamily: 'monospace', fontSize: 12, width: '100%', height: 200 }}
+                            style={{ fontFamily: 'monospace', fontSize: 12, width: '100%' }}
                         />
                     </SettingRow>
                 )}
@@ -258,13 +257,8 @@ export default function Setting(props: AllWidgetSettingProps<IMConfig>) {
                         />
                         <div css={iconPreview} title="Live preview of the typed icon name and size">
                             <calcite-icon
-                                icon={(config.icon && config.icon.trim()) || 'bell-f'}
-                                scale="m"
-                                style={{
-                                    fontSize: `${config.iconSize || 24}px`,
-                                    width: `${config.iconSize || 24}px`,
-                                    height: `${config.iconSize || 24}px`
-                                } as React.CSSProperties}
+                                icon={(config.icon && config.icon.trim()) || 'bell-f' as any}
+                                scale={config.iconSize || 'm'}
                             />
                         </div>
                     </div>
@@ -276,20 +270,18 @@ export default function Setting(props: AllWidgetSettingProps<IMConfig>) {
                     </div>
                 </SettingRow>
 
-                <SettingRow label="Icon size (px)" flow="wrap">
-                    <NumericInput
-                        value={config.iconSize || 24}
-                        onChange={(value) => { update('iconSize', value) }}
-                        min={12}
-                        max={64}
-                        step={1}
-                        showHandlers
+                <SettingRow label="Icon size" flow="wrap">
+                    <Select
+                        value={config.iconSize || 'm'}
+                        onChange={(e) => { update('iconSize', e.target.value) }}
                         style={{ width: '100%' }}
-                    />
-                    <div css={helperText}>
-                        Pixel size of the icon. Default 24. Use the arrows to bump up or down, or type a number directly.
-                    </div>
+                    >
+                        <Option value="s">Small</Option>
+                        <Option value="m">Medium</Option>
+                        <Option value="l">Large</Option>
+                    </Select>
                 </SettingRow>
+
 
                 <SettingRow label="Icon color" flow="no-wrap">
                     <ColorPicker
@@ -310,6 +302,9 @@ export default function Setting(props: AllWidgetSettingProps<IMConfig>) {
                         aria-label="Notification dot color"
                     />
                 </SettingRow>
+                <div css={helperText}>
+                    Color of the icon and dot are inherited from the theme. Use the color pickers above if you want to customize, which will override the theme color.
+                </div>
 
                 <SettingRow label="Always show dot" flow="no-wrap">
                     <Switch
