@@ -14,7 +14,7 @@ import {
     NumericInput
 } from 'jimu-ui'
 import { ColorPicker } from 'jimu-ui/basic/color-picker'
-import type { IMConfig, LogicalPlacement } from '../config'
+import type { Config, IMConfig, LogicalPlacement } from '../config'
 import 'calcite-components'
 
 const Fragment = React.Fragment
@@ -95,10 +95,14 @@ const parsePublishedDate = (id: string): string | null => {
     })
 }
 
-export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
+type SettingProps = AllWidgetSettingProps<IMConfig> & {
+    id: string
+}
+
+export default function Setting (props: SettingProps) {
     const { config, onSettingChange, id } = props
 
-    const update = <K extends keyof IMConfig> (key: K, value: IMConfig[K] | string | boolean | number) => {
+    const update = <K extends keyof Config> (key: K, value: Config[K]) => {
         onSettingChange({ id, config: config.set(key, value) })
     }
 

@@ -18,7 +18,11 @@ const DEFAULT_ICON_SIZE = 'm'
 const DEFAULT_CONTENT_WIDTH = 320
 const IFRAME_HEIGHT = 400
 
-export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactElement {
+type WidgetProps = AllWidgetProps<IMConfig> & {
+    id: string
+}
+
+export default function Widget (props: WidgetProps): React.ReactElement {
     const { config, id: widgetId } = props
 
     const [open, setOpen] = useState(false)
