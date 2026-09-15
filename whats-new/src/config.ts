@@ -1,11 +1,4 @@
-// Type-only compatibility shape for Experience Builder immutable config objects.
-// Avoids Visual Studio resolving @types/seamless-immutable/index.d.ts as a
-// non-module under the EB 1.21 pnpm layout. No JavaScript is emitted.
-type ImmutableObject<T> = T & {
-    set: <K extends keyof T>(key: K, value: T[K]) => ImmutableObject<T>
-    without: (...keys: Array<keyof T>) => ImmutableObject<T>
-    asMutable: (options?: { deep?: boolean }) => T
-}
+import type { ImmutableObject } from 'seamless-immutable'
 
 export type ContentMode = 'link' | 'html'
 export type DisplayMode = 'popover' | 'modal'
