@@ -157,7 +157,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                     modal
                     label={config.title || "What's New"}
                     heading={config.title || "What's New"}
-                    heading-level={2}
+                    headingLevel={2}
                     kind="info"
                     placement="center"
                     width="m"
@@ -173,9 +173,10 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                     open={open}
                     label={config.title || "What's New"}
                     heading={config.title || "What's New"}
-                    heading-level={3}
+                    headingLevel={3}
                     closable
                     autoClose
+                    triggerDisabled
                     placement={config.placement || 'auto'}
                     oncalcitePopoverClose={() => { setOpen(false) }}
                     style={{

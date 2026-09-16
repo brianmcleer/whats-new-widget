@@ -98,7 +98,7 @@ const parsePublishedDate = (id: string): string | null => {
 export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
     const { config, onSettingChange, id } = props
 
-    const update = <K extends keyof IMConfig> (key: K, value: IMConfig[K] | string | boolean | number) => {
+    const update = <K extends keyof IMConfig> (key: K, value: IMConfig[K]) => {
         onSettingChange({ id, config: config.set(key, value) })
     }
 
