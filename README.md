@@ -74,6 +74,12 @@ extract it, and drop the `whats-new/` folder into your EB install at
 Full install steps and troubleshooting are in
 [`whats-new/README.md`](whats-new/README.md).
 
+### The release zip and the editor shims
+
+The zip is the widget only. The Visual Studio type shims in the repo (`whats-new/src/calcite-elements.d.ts`, `whats-new/src/exb-editor-shims.d.ts`, `whats-new/src/vendor-shims.d.ts`) are left out on purpose: their ambient `declare module` blocks are not file-scoped and would rewrite the react, jimu and esri types for every other widget in your `your-extensions` folder.
+
+If you clone the repository instead of using the zip, delete `whats-new/src/calcite-elements.d.ts` and the other shim files listed above before building; nothing else depends on them.
+
 ## Publishing updates (Brian)
 
 The automation script `publish.ps1` syncs the latest widget files from the

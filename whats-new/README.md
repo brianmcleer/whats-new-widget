@@ -69,6 +69,12 @@ whats-new/
 4. In the Experience designer, the widget appears under "Custom" as
    **What's New**.
 
+### The release zip and the editor shims
+
+The zip is the widget only. The Visual Studio type shims in the repo (`whats-new/src/calcite-elements.d.ts`, `whats-new/src/exb-editor-shims.d.ts`, `whats-new/src/vendor-shims.d.ts`) are left out on purpose: their ambient `declare module` blocks are not file-scoped and would rewrite the react, jimu and esri types for every other widget in your `your-extensions` folder.
+
+If you clone the repository instead of using the zip, delete `whats-new/src/calcite-elements.d.ts` and the other shim files listed above before building; nothing else depends on them.
+
 ## How the unseen dot works
 
 Each user's view state is stored in `localStorage` under
