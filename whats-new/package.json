@@ -1,6 +1,6 @@
 {
   "name": "whats-new",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "ArcGIS Experience Builder widget that adds a bell-and-red-dot notification pattern to public-facing map applications. Click the bell to see what's new, dot disappears across browser sessions until the next announcement.",
   "license": "Apache-2.0",
   "author": "Brian McLeer and Lucius Creamer",

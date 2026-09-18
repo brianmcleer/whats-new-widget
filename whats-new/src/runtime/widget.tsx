@@ -9,9 +9,11 @@
  */
 import { React, type AllWidgetProps } from 'jimu-core'
 import type { IMConfig } from '../config'
+import { beacon } from '../shared/beacon'
+import type { BeaconHandle } from '../shared/beacon'
 import 'calcite-components'
 
-const { useState, useEffect, useMemo, useCallback } = React
+const { useState, useEffect, useMemo, useCallback, useRef } = React
 
 const DEFAULT_ICON = 'bell-f'
 const DEFAULT_ICON_SIZE = 'm'
@@ -26,6 +28,9 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
 
     const storageKey = useMemo(() => `whatsnew:${widgetId}:seen`, [widgetId])
     const isModal = config.displayMode === 'modal'
+    const beaconRef = useRef<BeaconHandle | null>(null)
+
+    useEffect(() => { beaconRef.current = beacon.init(props) }, [])
 
     // Recompute unseen state whenever announcementId or override toggle changes
     useEffect(() => {
@@ -52,6 +57,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
         try {
             window.localStorage.setItem(storageKey, config.announcementId || '')
         } catch (e) {
+            beaconRef.current?.error(e, 'open-announcement')
             // localStorage unavailable
         }
         if (!config.showDotAlways) setHasUnseen(false)
@@ -60,14 +66,17 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
     const handleBellClick = () => {
         // Link mode plus new tab: open the URL and mark seen, no panel
         if (config.contentMode === 'link' && config.openInNewTab && config.linkUrl) {
+            beaconRef.current?.action('open-link')
             window.open(config.linkUrl, '_blank', 'noopener,noreferrer')
             markSeen()
             return
         }
         if (open) {
+            beaconRef.current?.action('close')
             setOpen(false)
             return
         }
+        beaconRef.current?.action('open-announcement')
         setOpen(true)
         markSeen()
     }
