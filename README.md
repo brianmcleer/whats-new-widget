@@ -1,6 +1,6 @@
 # What's New widget
 
-[![License](https://img.shields.io/github/license/brianmcleer/whats-new-widget)](LICENSE) [![Release](https://img.shields.io/github/v/release/brianmcleer/=tag)](https://github.com/brianmcleer/whats-new-widget/releases) [![Issues](https://img.shields.io/github/issues/brianmcleer/whats-new-widget)](https://github.com/brianmcleer/whats-new-widget/issues)
+[![License](https://img.shields.io/github/license/brianmcleer/whats-new-widget)](LICENSE) [![Release](https://img.shields.io/github/v/release/brianmcleer/whats-new-widget?display_name=tag)](https://github.com/brianmcleer/whats-new-widget/releases) [![Issues](https://img.shields.io/github/issues/brianmcleer/whats-new-widget)](https://github.com/brianmcleer/whats-new-widget/issues)
 
 ArcGIS Experience Builder custom widget that adds a bell-and-red-dot
 notification pattern to public-facing map applications. Click the bell to
@@ -42,27 +42,27 @@ original widget by the City of Grand Junction GIS Division.
 
 ```
 whats-new-widget/
-â”œâ”€â”€ README.md            <- this file (GitHub landing page)
-â”œâ”€â”€ LICENSE              <- Apache-2.0
-â”œâ”€â”€ .gitignore
-â”œâ”€â”€ publish.ps1          <- automation script (see below)
-â””â”€â”€ whats-new/           <- the actual widget (drops into your-extensions/widgets)
-    â”œâ”€â”€ package.json
-    â”œâ”€â”€ package-lock.json
-    â”œâ”€â”€ manifest.json
-    â”œâ”€â”€ config.json
-    â”œâ”€â”€ icon.svg
-    â”œâ”€â”€ README.md        <- install + usage guide that travels with the widget
-    â”œâ”€â”€ LICENSE
-    â”œâ”€â”€ .gitignore
-    â”œâ”€â”€ .npmignore
-    â””â”€â”€ src/
-        â”œâ”€â”€ config.ts
-        â”œâ”€â”€ calcite-elements.d.ts
-        â”œâ”€â”€ runtime/
-        â”‚   â””â”€â”€ widget.tsx
-        â””â”€â”€ setting/
-            â””â”€â”€ setting.tsx
+├── README.md            <- this file (GitHub landing page)
+├── LICENSE              <- Apache-2.0
+├── .gitignore
+├── publish.ps1          <- automation script (see below)
+└── whats-new/           <- the actual widget (drops into your-extensions/widgets)
+    ├── package.json
+    ├── package-lock.json
+    ├── manifest.json
+    ├── config.json
+    ├── icon.svg
+    ├── README.md        <- install + usage guide that travels with the widget
+    ├── LICENSE
+    ├── .gitignore
+    ├── .npmignore
+    └── src/
+        ├── config.ts
+        ├── calcite-elements.d.ts
+        ├── runtime/
+        │   └── widget.tsx
+        └── setting/
+            └── setting.tsx
 ```
 
 ## Install (end-users)
