@@ -16,6 +16,9 @@ import {
 import { ColorPicker } from 'jimu-ui/basic/color-picker'
 import type { IMConfig, LogicalPlacement } from '../config'
 import 'calcite-components'
+import { hooks as __exbI18nHooks } from 'jimu-core';
+import __exbI18nMessages from './translations/default';
+
 
 const Fragment = React.Fragment
 
@@ -96,6 +99,7 @@ const parsePublishedDate = (id: string): string | null => {
 }
 
 export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
+  const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
     const { config, onSettingChange, id } = props
 
     const update = <K extends keyof IMConfig> (key: K, value: IMConfig[K]) => {
@@ -106,17 +110,17 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
 
     return (
         <div className="whats-new-setting">
-            <SettingSection title="Announcement">
-                <SettingRow label="Title" flow="wrap">
+            <SettingSection title={t('announcement')}>
+                <SettingRow label={t('title')} flow="wrap">
                     <TextInput
                         value={config.title || ''}
                         onChange={(e) => { update('title', e.target.value) }}
-                        placeholder="What's New"
+                        placeholder={t('whatSNew')}
                         style={{ width: '100%' }}
                     />
                 </SettingRow>
 
-                <SettingRow label="Announcement ID" flow="wrap">
+                <SettingRow label={t('announcementId')} flow="wrap">
                     <div css={idRow}>
                         <div css={idInputWrap}>
                             <TextInput
@@ -129,32 +133,32 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                         <Button
                             type="primary"
                             size="sm"
-                            title="Set ID to current timestamp. This re-notifies all users."
+                            title={t('setIdToCurrentTimestampThis')}
                             onClick={() => { update('announcementId', generateAnnouncementId()) }}
                         >
-                            New ID
+                            {t('newId')}
                         </Button>
                     </div>
                 </SettingRow>
                 <div css={helperText}>
-                    Click <strong>New ID</strong> after editing content to re-notify all users.
+                    {t('click')} <strong>{t('newId')}</strong> {t('afterEditingContentToReNotify')}
                     {publishedDate && (
                         <Fragment>
-                            <br />Last published: <strong>{publishedDate}</strong>
+                            <br />{t('lastPublished')} <strong>{publishedDate}</strong>
                         </Fragment>
                     )}
                 </div>
             </SettingSection>
 
-            <SettingSection title="Content">
-                <SettingRow label="Content type" flow="wrap">
+            <SettingSection title={t('content')}>
+                <SettingRow label={t('contentType')} flow="wrap">
                     <Select
                         value={config.contentMode || 'html'}
                         onChange={(e) => { update('contentMode', e.target.value as 'html' | 'link') }}
                         style={{ width: '100%' }}
                     >
-                        <Option value="html">Rich HTML</Option>
-                        <Option value="link">External link</Option>
+                        <Option value="html">{t('richHtml')}</Option>
+                        <Option value="link">{t('externalLink')}</Option>
                     </Select>
                 </SettingRow>
 
@@ -168,21 +172,21 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                                 style={{ width: '100%' }}
                             />
                         </SettingRow>
-                        <SettingRow label="Open in new tab" flow="no-wrap">
+                        <SettingRow label={t('openInNewTab')} flow="no-wrap">
                             <Switch
                                 checked={!!config.openInNewTab}
                                 onChange={(e) => { update('openInNewTab', e.target.checked) }}
                             />
                         </SettingRow>
                         <div css={helperText}>
-                            When off, the URL loads in an iframe inside the popover. Sites that send
+                            {t('whenOffTheUrlLoadsIn')}
                             <code> X-Frame-Options: DENY </code>
-                            will render blank. Enable "Open in new tab" or switch to Rich HTML.
+                            {t('willRenderBlankEnableOpenIn')}
                         </div>
                     </Fragment>
                 )}
                 {config.contentMode === 'html' && (
-                    <SettingRow label="HTML content" flow="wrap">
+                    <SettingRow label={t('htmlContent')} flow="wrap">
                         <TextArea
                             value={config.htmlContent || ''}
                             onChange={(e) => { update('htmlContent', e.target.value) }}
@@ -193,21 +197,21 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                 )}
             </SettingSection>
 
-            <SettingSection title="Display">
-                <SettingRow label="Display mode" flow="wrap">
+            <SettingSection title={t('display')}>
+                <SettingRow label={t('displayMode')} flow="wrap">
                     <Select
                         value={config.displayMode || 'popover'}
                         onChange={(e) => { update('displayMode', e.target.value as 'popover' | 'modal') }}
                         style={{ width: '100%' }}
                     >
-                        <Option value="popover">Popover (anchored to bell)</Option>
-                        <Option value="modal">Modal (centered overlay)</Option>
+                        <Option value="popover">{t('popoverAnchoredToBell')}</Option>
+                        <Option value="modal">{t('modalCenteredOverlay')}</Option>
                     </Select>
                 </SettingRow>
 
                 {config.displayMode === 'popover' && (
                     <Fragment>
-                        <SettingRow label="Content width" flow="wrap">
+                        <SettingRow label={t('contentWidth')} flow="wrap">
                             <NumericInput
                                 value={config.contentWidth || 320}
                                 onChange={(value) => { update('contentWidth', value) }}
@@ -215,47 +219,47 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                             />
                         </SettingRow>
 
-                        <SettingRow label="Popover placement" flow="wrap">
+                        <SettingRow label={t('popoverPlacement')} flow="wrap">
                             <Select
                                 value={config.placement || 'auto'}
                                 onChange={(evt) => { update('placement', evt.target.value as LogicalPlacement) }}
                                 style={{ width: '100%' }}
                             >
-                                <Option value="auto">Auto (default)</Option>
-                                <Option value="top">Top</Option>
-                                <Option value="bottom">Bottom</Option>
-                                <Option value="left">Left</Option>
-                                <Option value="right">Right</Option>
-                                <Option value="auto-start">Auto-start</Option>
-                                <Option value="auto-end">Auto-end</Option>
-                                <Option value="top-start">Top-start</Option>
-                                <Option value="top-end">Top-end</Option>
-                                <Option value="bottom-start">Bottom-start</Option>
-                                <Option value="bottom-end">Bottom-end</Option>
-                                <Option value="left-start">Left-start</Option>
-                                <Option value="left-end">Left-end</Option>
-                                <Option value="right-start">Right-start</Option>
-                                <Option value="right-end">Right-end</Option>
-                                <Option value="leading-start">Leading-start</Option>
-                                <Option value="leading">Leading</Option>
-                                <Option value="leading-end">Leading-end</Option>
-                                <Option value="trailing-end">Trailing-end</Option>
-                                <Option value="trailing">Trailing</Option>
-                                <Option value="trailing-start">Trailing-start</Option>
+                                <Option value="auto">{t('autoDefault')}</Option>
+                                <Option value="top">{t('top')}</Option>
+                                <Option value="bottom">{t('bottom')}</Option>
+                                <Option value="left">{t('left')}</Option>
+                                <Option value="right">{t('right')}</Option>
+                                <Option value="auto-start">{t('autoStart')}</Option>
+                                <Option value="auto-end">{t('autoEnd')}</Option>
+                                <Option value="top-start">{t('topStart')}</Option>
+                                <Option value="top-end">{t('topEnd')}</Option>
+                                <Option value="bottom-start">{t('bottomStart')}</Option>
+                                <Option value="bottom-end">{t('bottomEnd')}</Option>
+                                <Option value="left-start">{t('leftStart')}</Option>
+                                <Option value="left-end">{t('leftEnd')}</Option>
+                                <Option value="right-start">{t('rightStart')}</Option>
+                                <Option value="right-end">{t('rightEnd')}</Option>
+                                <Option value="leading-start">{t('leadingStart')}</Option>
+                                <Option value="leading">{t('leading')}</Option>
+                                <Option value="leading-end">{t('leadingEnd')}</Option>
+                                <Option value="trailing-end">{t('trailingEnd')}</Option>
+                                <Option value="trailing">{t('trailing')}</Option>
+                                <Option value="trailing-start">{t('trailingStart')}</Option>
                             </Select>
                         </SettingRow>
                     </Fragment>
                 )}
 
-                <SettingRow label="Icon" flow="wrap">
+                <SettingRow label={t('icon')} flow="wrap">
                     <div css={iconRow}>
                         <TextInput
                             value={config.icon || 'bell-f'}
                             onChange={(e) => { update('icon', e.target.value) }}
-                            placeholder="calcite-ui-icons name, e.g. bell-f"
+                            placeholder={t('calciteUiIconsNameEG')}
                             style={{ flex: 1, minWidth: 0 }}
                         />
-                        <div css={iconPreview} title="Live preview of the typed icon name and size">
+                        <div css={iconPreview} title={t('livePreviewOfTheTypedIcon')}>
                             <calcite-icon
                                 icon={(config.icon && config.icon.trim()) || 'bell-f' as any}
                                 scale={config.iconSize || 'm'}
@@ -263,50 +267,49 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                         </div>
                     </div>
                     <div css={helperText}>
-                        Use any name from the
-                        <a href="https://developers.arcgis.com/calcite-design-system/icons/" target="_blank" rel="noopener noreferrer"> Calcite UI Icons </a>
-                        reference. Paste the exact name shown on the page (e.g. <code>bell</code>, <code>bell-f</code>, <code>chevron-right</code>).
-                        The preview to the right updates as you type. If it goes blank, the name is not recognized.
+                        {t('useAnyNameFromThe')}
+                        <a href="https://developers.arcgis.com/calcite-design-system/icons/" target="_blank" rel="noopener noreferrer"> {t('calciteUiIcons')} </a>
+                        {t('referencePasteTheExactNameShown')} <code>bell</code>, <code>bell-f</code>, <code>chevron-right</code>{t('thePreviewToTheRightUpdates')}
                     </div>
                 </SettingRow>
 
-                <SettingRow label="Icon size" flow="wrap">
+                <SettingRow label={t('iconSize')} flow="wrap">
                     <Select
                         value={config.iconSize || 'm'}
                         onChange={(e) => { update('iconSize', e.target.value) }}
                         style={{ width: '100%' }}
                     >
-                        <Option value="s">Small</Option>
-                        <Option value="m">Medium</Option>
-                        <Option value="l">Large</Option>
+                        <Option value="s">{t('small')}</Option>
+                        <Option value="m">{t('medium')}</Option>
+                        <Option value="l">{t('large')}</Option>
                     </Select>
                 </SettingRow>
 
 
-                <SettingRow label="Icon color" flow="no-wrap">
+                <SettingRow label={t('iconColor')} flow="no-wrap">
                     <ColorPicker
                         type="default"
                         value={config.bellColor || ''}
                         color={config.bellColor || ''}
                         onChange={(color) => { update('bellColor', color) }}
-                        aria-label="Icon color"
+                        aria-label={t('iconColor')}
                     />
                 </SettingRow>
 
-                <SettingRow label="Dot color" flow="no-wrap">
+                <SettingRow label={t('dotColor')} flow="no-wrap">
                     <ColorPicker
                         type="default"
                         value={config.dotColor || ''}
                         color={config.dotColor || ''}
                         onChange={(color) => { update('dotColor', color) }}
-                        aria-label="Notification dot color"
+                        aria-label={t('notificationDotColor')}
                     />
                 </SettingRow>
                 <div css={helperText}>
-                    Color of the icon and dot are inherited from the theme. Use the color pickers above if you want to customize, which will override the theme color.
+                    {t('colorOfTheIconAndDot')}
                 </div>
 
-                <SettingRow label="Always show dot" flow="no-wrap">
+                <SettingRow label={t('alwaysShowDot')} flow="no-wrap">
                     <Switch
                         checked={!!config.showDotAlways}
                         onChange={(e) => { update('showDotAlways', e.target.checked) }}

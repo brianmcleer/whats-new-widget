@@ -12,6 +12,9 @@ import type { IMConfig } from '../config'
 import { beacon } from '../shared/beacon'
 import type { BeaconHandle } from '../shared/beacon'
 import 'calcite-components'
+import { hooks as __exbI18nHooks } from 'jimu-core';
+import __exbI18nMessages from './translations/default';
+
 
 const { useState, useEffect, useMemo, useCallback, useRef } = React
 
@@ -21,6 +24,7 @@ const DEFAULT_CONTENT_WIDTH = 320
 const IFRAME_HEIGHT = 400
 
 export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactElement {
+  const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
     const { config, id: widgetId } = props
 
     const [open, setOpen] = useState(false)
@@ -89,14 +93,14 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
             if (!config.linkUrl) {
                 return (
                     <div style={{ padding: '12px 16px', color: '#666' }}>
-                        No link configured.
+                        {t('noLinkConfigured')}
                     </div>
                 )
             }
             return (
                 <iframe
                     src={config.linkUrl}
-                    title={config.title || "What's New"}
+                    title={config.title || t('_widgetLabel')}
                     style={{
                         width: '100%',
                         height: IFRAME_HEIGHT,
@@ -144,7 +148,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
         >
             <calcite-action
                 id={bellId}
-                text={config.title || "What's New"}
+                text={config.title || t('_widgetLabel')}
                 label={ariaLabel}
                 aria-haspopup={isModal ? 'dialog' : 'true'}
                 aria-expanded={open}
@@ -164,7 +168,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                     id={`${widgetId}-modal`}
                     open={open}
                     modal
-                    label={config.title || "What's New"}
+                    label={config.title || t('_widgetLabel')}
                     heading={config.title || "What's New"}
                     headingLevel={2}
                     kind="info"
@@ -180,7 +184,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                 <calcite-popover
                     referenceElement={bellId}
                     open={open}
-                    label={config.title || "What's New"}
+                    label={config.title || t('_widgetLabel')}
                     heading={config.title || "What's New"}
                     headingLevel={3}
                     closable
