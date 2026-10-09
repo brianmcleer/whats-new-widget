@@ -18,6 +18,17 @@ import type { IMConfig, LogicalPlacement } from '../config'
 import 'calcite-components'
 import { hooks as __exbI18nHooks } from 'jimu-core';
 import __exbI18nMessages from './translations/default';
+import __i18nDefaults from './translations/default'
+let __i18nIntl: any = null
+/** Module translator: app language via the widget intl, English from default.ts, {name} values filled. */
+const __t = (id: string, values?: { [key: string]: any }): string => {
+  const msg: string = (__i18nDefaults as any)[id] ?? id
+  if (__i18nIntl && typeof __i18nIntl.formatMessage === 'function') {
+    try { return __i18nIntl.formatMessage({ id, defaultMessage: msg }, values) } catch (e) { }
+  }
+  return msg.replace(/\{(\w+)\}/g, (m: string, k: string) => (values && values[k] != null ? String(values[k]) : m))
+}
+
 
 
 const Fragment = React.Fragment
@@ -99,6 +110,7 @@ const parsePublishedDate = (id: string): string | null => {
 }
 
 export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
+  __i18nIntl = (props as any).intl
   const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
     const { config, onSettingChange, id } = props
 
@@ -180,7 +192,7 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                         </SettingRow>
                         <div css={helperText}>
                             {t('whenOffTheUrlLoadsIn')}
-                            <code> X-Frame-Options: DENY </code>
+                            <code> {__t("uiXFrameOptionsDeny")} </code>
                             {t('willRenderBlankEnableOpenIn')}
                         </div>
                     </Fragment>
@@ -269,7 +281,7 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                     <div css={helperText}>
                         {t('useAnyNameFromThe')}
                         <a href="https://developers.arcgis.com/calcite-design-system/icons/" target="_blank" rel="noopener noreferrer"> {t('calciteUiIcons')} </a>
-                        {t('referencePasteTheExactNameShown')} <code>bell</code>, <code>bell-f</code>, <code>chevron-right</code>{t('thePreviewToTheRightUpdates')}
+                        {t('referencePasteTheExactNameShown')} <code>{__t("uiBell")}</code>, <code>{__t("uiBellF")}</code>, <code>{__t("uiChevronRight")}</code>{t('thePreviewToTheRightUpdates')}
                     </div>
                 </SettingRow>
 

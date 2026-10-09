@@ -58,5 +58,9 @@ export default {
   dotColor: 'Dot color',
   notificationDotColor: 'Notification dot color',
   colorOfTheIconAndDot: 'Color of the icon and dot are inherited from the theme. Use the color pickers above if you want to customize, which will override the theme color.',
-  alwaysShowDot: 'Always show dot'
+  alwaysShowDot: 'Always show dot',
+  uiXFrameOptionsDeny: 'X-Frame-Options: DENY',
+  uiBell: 'bell',
+  uiBellF: 'bell-f',
+  uiChevronRight: 'chevron-right'
 }

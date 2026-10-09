@@ -16,12 +16,12 @@ System.register([], function (e) {
         contentType: "Content type",
         richHtml: "Rich HTML",
         externalLink: "External link",
-        openInNewTab: "Open in new tab",
+        openInNewTab: "Mở trong thẻ mới",
         whenOffTheUrlLoadsIn: "When off, the URL loads in an iframe inside the popover. Sites that send",
         willRenderBlankEnableOpenIn: "will render blank. Enable \"Open in new tab\" or switch to Rich HTML.",
         htmlContent: "HTML content",
         display: "Hiển thị",
-        displayMode: "Display mode",
+        displayMode: "Chế độ Hiển thị",
         popoverAnchoredToBell: "Popover (anchored to bell)",
         modalCenteredOverlay: "Modal (centered overlay)",
         contentWidth: "Content width",
@@ -62,7 +62,11 @@ System.register([], function (e) {
         dotColor: "Dot color",
         notificationDotColor: "Notification dot color",
         colorOfTheIconAndDot: "Color of the icon and dot are inherited from the theme. Use the color pickers above if you want to customize, which will override the theme color.",
-        alwaysShowDot: "Always show dot"
+        alwaysShowDot: "Always show dot",
+        uiXFrameOptionsDeny: "X-Frame-Options: DENY",
+        uiBell: "bell",
+        uiBellF: "bell-f",
+        uiChevronRight: "chevron-right"
       })
     }
   }

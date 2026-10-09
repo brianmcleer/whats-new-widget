@@ -14,6 +14,7 @@ import type { BeaconHandle } from '../shared/beacon'
 import 'calcite-components'
 import { hooks as __exbI18nHooks } from 'jimu-core';
 import __exbI18nMessages from './translations/default';
+import { __setIntl, __tc } from './i18n-t'
 
 
 const { useState, useEffect, useMemo, useCallback, useRef } = React
@@ -24,6 +25,7 @@ const DEFAULT_CONTENT_WIDTH = 320
 const IFRAME_HEIGHT = 400
 
 export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactElement {
+  __setIntl((props as any).intl)
   const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
     const { config, id: widgetId } = props
 
@@ -132,8 +134,8 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
     // small icon sizes; about 32% of the icon size otherwise.
     // const dotSize = Math.max(8, Math.round(iconSize * 0.32))
     const ariaLabel = hasUnseen
-        ? `${config.title || "What's New"}, new updates available`
-        : (config.title || "What's New")
+        ? `${__tc(config.title, "_widgetLabel")}, new updates available`
+        : (__tc(config.title, "_widgetLabel"))
 
     return (
         <div
@@ -158,7 +160,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                 indicator={hasUnseen}
                 style={{
                     '--calcite-action-corner-radius': 'var(--calcite-button-corner-radius)',
-                    '--calcite-action-indicator-color': config.dotColor || 'var(--calcite-color-status-danger, #d83020)',
+                    '--calcite-action-indicator-color': __tc(config.dotColor, "varCalciteColorStatusDangerD83020"),
                     '--calcite-action-text-color': config.bellColor || 'var(--calcite-color-text-1)',
                 }}
             />
@@ -169,7 +171,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                     open={open}
                     modal
                     label={config.title || t('_widgetLabel')}
-                    heading={config.title || "What's New"}
+                    heading={__tc(config.title, "_widgetLabel")}
                     headingLevel={2}
                     kind="info"
                     placement="center"
@@ -185,7 +187,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                     referenceElement={bellId}
                     open={open}
                     label={config.title || t('_widgetLabel')}
-                    heading={config.title || "What's New"}
+                    heading={__tc(config.title, "_widgetLabel")}
                     headingLevel={3}
                     closable
                     autoClose
