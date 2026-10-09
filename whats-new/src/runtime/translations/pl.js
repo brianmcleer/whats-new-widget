@@ -8,7 +8,7 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "var (-- calcite- color- status- danger, # d83020)",
         unknownError: "nieznany błąd",
         unserializableError: "błąd niezserializowalny",
-        valueNewUpdatesAvailable: "{value}, new updates available"
+        valueNewUpdatesAvailable: "{value}, nowe aktualizacje dostępne"
       })
     }
   }

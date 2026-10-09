@@ -8,7 +8,7 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "- Calcite-color-status-perigo, #d83020)",
         unknownError: "Erro desconhecido",
         unserializableError: "Erro inserializável",
-        valueNewUpdatesAvailable: "{value}, new updates available"
+        valueNewUpdatesAvailable: "{value}, novas atualizações disponíveis"
       })
     }
   }

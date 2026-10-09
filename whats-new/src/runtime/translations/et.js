@@ -8,7 +8,7 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "var(- kaltsiit- värv- seisund- oht, #d83020)",
         unknownError: "tundmatu viga",
         unserializableError: "seeriaviisiline viga",
-        valueNewUpdatesAvailable: "{value}, new updates available"
+        valueNewUpdatesAvailable: "{value}, uued uuendused kättesaadavad"
       })
     }
   }

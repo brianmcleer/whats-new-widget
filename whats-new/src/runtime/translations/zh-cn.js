@@ -8,7 +8,7 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "var (- calcite- color- status- danger, #d83020) (英语).",
         unknownError: "未知错误",
         unserializableError: "无序错误",
-        valueNewUpdatesAvailable: "{value}, new updates available"
+        valueNewUpdatesAvailable: "{value},有新的更新"
       })
     }
   }

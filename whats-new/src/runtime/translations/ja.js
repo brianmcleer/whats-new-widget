@@ -8,7 +8,7 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "var(----calcite-color-status-danger, #d83020) 株式会社ドリテック",
         unknownError: "未知のエラー",
         unserializableError: "unserializable エラー",
-        valueNewUpdatesAvailable: "{value}, new updates available"
+        valueNewUpdatesAvailable: "{value}、利用できる新しい更新"
       })
     }
   }

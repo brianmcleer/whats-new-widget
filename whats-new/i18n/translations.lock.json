@@ -15,16 +15,16 @@
       },
       "locales": {
         "ar": {
-          "file": "556f6ecac81a",
+          "file": "f9b8cd0afef8",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -41,20 +41,25 @@
               "t": "var(-calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}المعلومات الجديدة المتاحة",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "bg": {
-          "file": "e1a953e5964e",
+          "file": "9fd58cefc680",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -71,6 +76,11 @@
               "t": "var(-calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, нови актуализации",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
@@ -89,16 +99,16 @@
           "entries": {}
         },
         "ca": {
-          "file": "d904908280d3",
+          "file": "0b86bedb7b85",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -115,20 +125,25 @@
               "t": "var( -calcte-color- autador, # d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, noves actualitzacions disponibles",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "cs": {
-          "file": "2a664210e0f7",
+          "file": "c749779b562b",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -145,20 +160,25 @@
               "t": "var (--calcite-color- status-danger, # d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, nové aktualizace k dispozici",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "da": {
-          "file": "9b7fca078350",
+          "file": "ef408d01e25f",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -175,20 +195,25 @@
               "t": "var (-- calcite- color- status- fare, # d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, nye opdateringer tilgængelige",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "de": {
-          "file": "bb16ed21ddc4",
+          "file": "07abcd3ba7d2",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -205,20 +230,25 @@
               "t": "var(--calcit-color-status-danger), #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, neue Updates verfügbar",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "el": {
-          "file": "c4e72371053c",
+          "file": "4022130e5fd7",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -235,20 +265,25 @@
               "t": "var(-- calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, νέες διαθέσιμες ενημερώσεις",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "es": {
-          "file": "c2afe1817e82",
+          "file": "ae9497600e62",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -265,20 +300,25 @@
               "t": "var(--calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, nuevas actualizaciones disponibles",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "et": {
-          "file": "8482f8b4a2e1",
+          "file": "491f2e835a4c",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -295,20 +335,25 @@
               "t": "var(- kaltsiit- värv- seisund- oht, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, uued uuendused kättesaadavad",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "fi": {
-          "file": "a707a54b9bc0",
+          "file": "679b037dff77",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -325,20 +370,25 @@
               "t": "var(--kalsite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, uudet päivitykset saatavilla",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "fr": {
-          "file": "08b95dab4a87",
+          "file": "c2d20c46ee9c",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -355,20 +405,25 @@
               "t": "var(--calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, nouvelles mises à jour disponibles",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "he": {
-          "file": "9009b401db4f",
+          "file": "6a5a41e9acc1",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -385,6 +440,11 @@
               "t": "var(-calcite-color-Danger, #D83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}עדכונים חדשים זמינים",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
@@ -403,16 +463,16 @@
           "entries": {}
         },
         "hu": {
-          "file": "a5d86682978a",
+          "file": "508b64423760",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -429,20 +489,25 @@
               "t": "var (--calcite- color- status- danger, # d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, új frissítések állnak rendelkezésre",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "id": {
-          "file": "8733b0350f62",
+          "file": "8fc3e0c529da",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -459,20 +524,25 @@
               "t": "var (--calcite -colors -status- bahaya, # d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, pemutakhiran baru tersedia",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "it": {
-          "file": "ccae8c797d94",
+          "file": "72a0e43f5983",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -489,20 +559,25 @@
               "t": "var(--calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, nuovi aggiornamenti disponibili",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "ja": {
-          "file": "f9a3eb3a0b64",
+          "file": "372a2e09dbbd",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -519,20 +594,25 @@
               "t": "var(----calcite-color-status-danger, #d83020) 株式会社ドリテック",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}、利用できる新しい更新",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "ko": {
-          "file": "3cc9b30e6020",
+          "file": "f397ac19a999",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -549,20 +629,25 @@
               "t": "var(----calcite-color-status-danger, #d83020)를 표현합니다.",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, 유효한 새로운 갱신",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "lt": {
-          "file": "662411316af3",
+          "file": "b4f4c87fa8ef",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -579,20 +664,25 @@
               "t": "var (--calcite- color-status-risk, # d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, prieinami nauji atnaujinimai",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "lv": {
-          "file": "3e4e2f9d4f26",
+          "file": "7c8630ab10ab",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -609,20 +699,25 @@
               "t": "var(--kalcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, pieejami jauni atjauninājumi",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "no": {
-          "file": "592837ae1eff",
+          "file": "777a121ba28f",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -639,20 +734,25 @@
               "t": "var(-calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}Ny oppdatering tilgjengelig",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "nl": {
-          "file": "69c4915b852b",
+          "file": "af6d92cdc1c5",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -669,20 +769,25 @@
               "t": "var(--calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, nieuwe updates beschikbaar",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "pl": {
-          "file": "7751d82b0869",
+          "file": "1dc5d9b6b5e3",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -699,20 +804,25 @@
               "t": "var (-- calcite- color- status- danger, # d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, nowe aktualizacje dostępne",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "pt-br": {
-          "file": "d13b5f04ac66",
+          "file": "78cce8030022",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -729,20 +839,25 @@
               "t": "- Calcite-color-status-perigo, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, novas atualizações disponíveis",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "pt-pt": {
-          "file": "fbde73bd5e76",
+          "file": "7738fb2318e1",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -759,20 +874,25 @@
               "t": "var( -- calcite- cor- estatuto- perigo, # d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, novas atualizações disponíveis",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "ro": {
-          "file": "99a9720916c9",
+          "file": "0e38521b7daa",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -789,20 +909,25 @@
               "t": "var (-calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, noi actualizări disponibile",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "ru": {
-          "file": "e3c7b02a6b55",
+          "file": "581f335c94ab",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -819,20 +944,25 @@
               "t": "var(--calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}Доступны новые обновления",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "sk": {
-          "file": "df117b038a0e",
+          "file": "ec86e77a85ea",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -849,20 +979,25 @@
               "t": "var(--calcit-color-status-danger #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, nové dostupné aktualizácie",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "sl": {
-          "file": "718b09452edd",
+          "file": "9d524907d92a",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -879,6 +1014,11 @@
               "t": "var(--kalcit-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, nove razpoložljive posodobitve",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
@@ -897,16 +1037,16 @@
           "entries": {}
         },
         "sv": {
-          "file": "6512abc003c5",
+          "file": "f854529bdafc",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -923,20 +1063,25 @@
               "t": "Var(-kalcit-färg-status-fara, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}nya uppdateringar tillgängliga",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "th": {
-          "file": "9c2a7357520e",
+          "file": "63ab39574486",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -953,20 +1098,25 @@
               "t": "VARIANCE(-- Ccalite-color-status-danguage, # d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}การปรับปรุงใหม่ที่มีอยู่",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "tr": {
-          "file": "4a4924feccb7",
+          "file": "7a60379e0b05",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -983,20 +1133,25 @@
               "t": "Var(-calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, mevcut yeni güncellemeler",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "zh-cn": {
-          "file": "c442517d1f17",
+          "file": "61f61d561d99",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -1013,20 +1168,25 @@
               "t": "var (- calcite- color- status- danger, #d83020) (英语).",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value},有新的更新",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "uk": {
-          "file": "b90958e7a161",
+          "file": "56e4af85a1e3",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -1043,20 +1203,25 @@
               "t": "var(-calcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}нові оновлення доступні",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "vi": {
-          "file": "2b0fc793c55d",
+          "file": "307811f54cc3",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -1073,20 +1238,25 @@
               "t": "var (--calcite-color-status-do nguy hiểm, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, các cập nhật có sẵn",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "zh-hk": {
-          "file": "deba5c99b83d",
+          "file": "6c48b1f9013a",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -1103,20 +1273,25 @@
               "t": "var(- calcite- color- status- danger, #d83020) 。",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value},有新的更新",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         },
         "zh-tw": {
-          "file": "deba5c99b83d",
+          "file": "6c48b1f9013a",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 3,
+            "machine": 4,
             "stale": 0,
-            "missing": 1
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
@@ -1133,6 +1308,11 @@
               "t": "var(- calcite- color- status- danger, #d83020) 。",
               "src": "machine",
               "h": "4bb581e02c08"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value},有新的更新",
+              "src": "machine",
+              "h": "168da5a0f88a"
             }
           }
         }
