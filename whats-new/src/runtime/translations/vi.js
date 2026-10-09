@@ -3,11 +3,12 @@ System.register([], function (e) {
   return {
     execute: function () {
       e({
-        _widgetLabel: "What's New",
-        noLinkConfigured: "No link configured.",
-        varCalciteColorStatusDangerD83020: "var(--calcite-color-status-danger, #d83020)",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        _widgetLabel: "Cái gì mới?",
+        noLinkConfigured: "Chưa cấu hình liên kết.",
+        varCalciteColorStatusDangerD83020: "var (--calcite-color-status-do nguy hiểm, #d83020)",
+        unknownError: "lỗi không rõ",
+        unserializableError: "Lỗi không thể gửi đi được",
+        valueNewUpdatesAvailable: "{value}, new updates available"
       })
     }
   }

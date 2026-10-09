@@ -19,6 +19,7 @@ import 'calcite-components'
 import { hooks as __exbI18nHooks } from 'jimu-core';
 import __exbI18nMessages from './translations/default';
 import __i18nDefaults from './translations/default'
+import { __locale, __setIntl } from './i18n-t'
 let __i18nIntl: any = null
 /** Module translator: app language via the widget intl, English from default.ts, {name} values filled. */
 const __t = (id: string, values?: { [key: string]: any }): string => {
@@ -100,7 +101,7 @@ const parsePublishedDate = (id: string): string | null => {
         parseInt(m[4], 10),
         parseInt(m[5], 10)
     )
-    return d.toLocaleString(undefined, {
+    return d.toLocaleString(__locale(), {
         year: 'numeric',
         month: 'short',
         day: 'numeric',
@@ -110,6 +111,7 @@ const parsePublishedDate = (id: string): string | null => {
 }
 
 export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
+  __setIntl((props as any).intl)
   __i18nIntl = (props as any).intl
   const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
     const { config, onSettingChange, id } = props

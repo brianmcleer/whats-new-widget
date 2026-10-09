@@ -4,10 +4,11 @@ System.register([], function (e) {
     execute: function () {
       e({
         _widgetLabel: "What's New",
-        noLinkConfigured: "No link configured.",
-        varCalciteColorStatusDangerD83020: "var(--calcite-color-status-danger, #d83020)",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        noLinkConfigured: "Hiçbir bağlantı yapılandırılmadı.",
+        varCalciteColorStatusDangerD83020: "Var(-calcite-color-status-danger, #d83020)",
+        unknownError: "Bilinmeyen hata",
+        unserializableError: "Başarısız olmayan hata",
+        valueNewUpdatesAvailable: "{value}, new updates available"
       })
     }
   }

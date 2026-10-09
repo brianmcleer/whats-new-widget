@@ -3,11 +3,12 @@ System.register([], function (e) {
   return {
     execute: function () {
       e({
-        _widgetLabel: "What's New",
-        noLinkConfigured: "No link configured.",
-        varCalciteColorStatusDangerD83020: "var(--calcite-color-status-danger, #d83020)",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        _widgetLabel: "새로운 소식",
+        noLinkConfigured: "설정된 링크가 없습니다.",
+        varCalciteColorStatusDangerD83020: "var(----calcite-color-status-danger, #d83020)를 표현합니다.",
+        unknownError: "알 수없는 오류",
+        unserializableError: "unserializable 오류",
+        valueNewUpdatesAvailable: "{value}, new updates available"
       })
     }
   }

@@ -14,7 +14,7 @@ import type { BeaconHandle } from '../shared/beacon'
 import 'calcite-components'
 import { hooks as __exbI18nHooks } from 'jimu-core';
 import __exbI18nMessages from './translations/default';
-import { __setIntl, __tc } from './i18n-t'
+import { __setIntl, __t, __tc } from './i18n-t'
 
 
 const { useState, useEffect, useMemo, useCallback, useRef } = React
@@ -134,7 +134,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
     // small icon sizes; about 32% of the icon size otherwise.
     // const dotSize = Math.max(8, Math.round(iconSize * 0.32))
     const ariaLabel = hasUnseen
-        ? `${__tc(config.title, "_widgetLabel")}, new updates available`
+        ? __t("valueNewUpdatesAvailable", { value: __tc(config.title, "_widgetLabel") })
         : (__tc(config.title, "_widgetLabel"))
 
     return (

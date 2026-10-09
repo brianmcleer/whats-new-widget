@@ -3,11 +3,12 @@ System.register([], function (e) {
   return {
     execute: function () {
       e({
-        _widgetLabel: "What's New",
-        noLinkConfigured: "No link configured.",
-        varCalciteColorStatusDangerD83020: "var(--calcite-color-status-danger, #d83020)",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        _widgetLabel: "新着情報",
+        noLinkConfigured: "リンクの設定はありません。",
+        varCalciteColorStatusDangerD83020: "var(----calcite-color-status-danger, #d83020) 株式会社ドリテック",
+        unknownError: "未知のエラー",
+        unserializableError: "unserializable エラー",
+        valueNewUpdatesAvailable: "{value}, new updates available"
       })
     }
   }
