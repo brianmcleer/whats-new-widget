@@ -85,18 +85,29 @@
           }
         },
         "bs": {
-          "file": "53a7e534a04d",
+          "file": "9c63bffb351d",
           "counts": {
             "esri": 0,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 2,
             "stale": 0,
-            "missing": 6
+            "missing": 4
           },
-          "entries": {}
+          "entries": {
+            "unknownError": {
+              "t": "nepoznata greška",
+              "src": "machine",
+              "h": "af6321ca7a8b"
+            },
+            "unserializableError": {
+              "t": "Neserijalizacijska greška",
+              "src": "machine",
+              "h": "76e73551597a"
+            }
+          }
         },
         "ca": {
           "file": "0b86bedb7b85",
@@ -449,18 +460,49 @@
           }
         },
         "hr": {
-          "file": "53a7e534a04d",
+          "file": "6deba64cc2fd",
           "counts": {
             "esri": 0,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 6,
             "stale": 0,
-            "missing": 6
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "_widgetLabel": {
+              "t": "Što je novo?",
+              "src": "machine",
+              "h": "a2efe202772f"
+            },
+            "noLinkConfigured": {
+              "t": "Veza nije podešena.",
+              "src": "machine",
+              "h": "645af7856cf9"
+            },
+            "varCalciteColorStatusDangerD83020": {
+              "t": "CRR-a.",
+              "src": "machine",
+              "h": "4bb581e02c08"
+            },
+            "unknownError": {
+              "t": "nepoznata greška",
+              "src": "machine",
+              "h": "af6321ca7a8b"
+            },
+            "unserializableError": {
+              "t": "Neserijalizacijska greška",
+              "src": "machine",
+              "h": "76e73551597a"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, dostupna nova ažuriranja",
+              "src": "machine",
+              "h": "168da5a0f88a"
+            }
+          }
         },
         "hu": {
           "file": "508b64423760",
@@ -1023,18 +1065,49 @@
           }
         },
         "sr": {
-          "file": "53a7e534a04d",
+          "file": "d95b64a3d075",
           "counts": {
             "esri": 0,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 6,
             "stale": 0,
-            "missing": 6
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "_widgetLabel": {
+              "t": "Šta je novo?",
+              "src": "machine",
+              "h": "a2efe202772f"
+            },
+            "noLinkConfigured": {
+              "t": "Nema konfigurisane veze.",
+              "src": "machine",
+              "h": "645af7856cf9"
+            },
+            "varCalciteColorStatusDangerD83020": {
+              "t": "var(--kalcite-color-status-danger, #d83020)",
+              "src": "machine",
+              "h": "4bb581e02c08"
+            },
+            "unknownError": {
+              "t": "nepoznata greška",
+              "src": "machine",
+              "h": "af6321ca7a8b"
+            },
+            "unserializableError": {
+              "t": "Neserijalizacijska greška",
+              "src": "machine",
+              "h": "76e73551597a"
+            },
+            "valueNewUpdatesAvailable": {
+              "t": "{value}, dostupna su nova ažuriranja",
+              "src": "machine",
+              "h": "168da5a0f88a"
+            }
+          }
         },
         "sv": {
           "file": "f854529bdafc",
@@ -1919,18 +1992,29 @@
           }
         },
         "bs": {
-          "file": "29fcd5e9fd10",
+          "file": "c64b53f61750",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 2,
             "stale": 0,
-            "missing": 50
+            "missing": 48
           },
-          "entries": {}
+          "entries": {
+            "openInNewTab": {
+              "t": "Otvori u novoj kartici",
+              "src": "machine",
+              "h": "71bf47a72828"
+            },
+            "displayMode": {
+              "t": "Prikaz",
+              "src": "machine",
+              "h": "627bc304e730"
+            }
+          }
         },
         "ca": {
           "file": "b8b372deaf8d",
@@ -4588,18 +4672,269 @@
           }
         },
         "hr": {
-          "file": "29fcd5e9fd10",
+          "file": "b3cdacd2c046",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 50,
             "stale": 0,
-            "missing": 50
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "announcement": {
+              "t": "Najava",
+              "src": "machine",
+              "h": "cf84a98d6cf7"
+            },
+            "whatSNew": {
+              "t": "Što je novo?",
+              "src": "machine",
+              "h": "a2efe202772f"
+            },
+            "announcementId": {
+              "t": "Identifikacija najave",
+              "src": "machine",
+              "h": "15386d1f9e25"
+            },
+            "newId": {
+              "t": "Novi ID",
+              "src": "machine",
+              "h": "c93bfee73d0f"
+            },
+            "setIdToCurrentTimestampThis": {
+              "t": "Podesi ID trenutnom vremenskom oznakom. Ovo ponovno obavještava sve korisnike.",
+              "src": "machine",
+              "h": "9dcdcd2c2bfe"
+            },
+            "afterEditingContentToReNotify": {
+              "t": "nakon uređivanja sadržaja za ponovno obavješćivanje svih korisnika.",
+              "src": "machine",
+              "h": "2f440ed6dcec"
+            },
+            "lastPublished": {
+              "t": "Zadnji put objavljeno:",
+              "src": "machine",
+              "h": "aaa5f3452d6c"
+            },
+            "contentType": {
+              "t": "Vrsta sadržaja",
+              "src": "machine",
+              "h": "de15f753728a"
+            },
+            "richHtml": {
+              "t": "Bogati HTML",
+              "src": "machine",
+              "h": "816b396affe1"
+            },
+            "externalLink": {
+              "t": "Vanjska poveznica",
+              "src": "machine",
+              "h": "66305476ff69"
+            },
+            "openInNewTab": {
+              "t": "Otvori u novoj kartici",
+              "src": "machine",
+              "h": "71bf47a72828"
+            },
+            "whenOffTheUrlLoadsIn": {
+              "t": "Kada je isključen, URL učitava u iframe unutar popover. Stranice koje šalju",
+              "src": "machine",
+              "h": "8d91b3ce1bc5"
+            },
+            "willRenderBlankEnableOpenIn": {
+              "t": "će iscrtati prazno. OmogućitiOtvori u novoj kartici ili prebaciti na Rich HTML.",
+              "src": "machine",
+              "h": "7d4f7f675c75"
+            },
+            "htmlContent": {
+              "t": "HTML sadržaj",
+              "src": "machine",
+              "h": "4c4103818889"
+            },
+            "displayMode": {
+              "t": "Način prikaza",
+              "src": "machine",
+              "h": "627bc304e730"
+            },
+            "popoverAnchoredToBell": {
+              "t": "Popover (namijenjeno zvonu)",
+              "src": "machine",
+              "h": "7965dd18a72d"
+            },
+            "modalCenteredOverlay": {
+              "t": "Modalno (centrirano preklapanje)",
+              "src": "machine",
+              "h": "7b34ce4bfbbb"
+            },
+            "contentWidth": {
+              "t": "Širina sadržaja",
+              "src": "machine",
+              "h": "c0544c2d5fab"
+            },
+            "popoverPlacement": {
+              "t": "Položaj Popopera",
+              "src": "machine",
+              "h": "6c79852fd761"
+            },
+            "autoDefault": {
+              "t": "Automatski (uobičajeno)",
+              "src": "machine",
+              "h": "41c7173e4b9a"
+            },
+            "autoStart": {
+              "t": "Automatsko pokretanje",
+              "src": "machine",
+              "h": "8ae48a77f32a"
+            },
+            "autoEnd": {
+              "t": "Automatski završetak",
+              "src": "machine",
+              "h": "83b945a7e742"
+            },
+            "topStart": {
+              "t": "Vrhunski pokretač",
+              "src": "machine",
+              "h": "659bfad36481"
+            },
+            "topEnd": {
+              "t": "Vrhunski",
+              "src": "machine",
+              "h": "e5ba42f31c71"
+            },
+            "bottomStart": {
+              "t": "Početak odozdo",
+              "src": "machine",
+              "h": "ab24580fafb1"
+            },
+            "bottomEnd": {
+              "t": "Donja strana",
+              "src": "machine",
+              "h": "56d57871cf21"
+            },
+            "leftStart": {
+              "t": "Lijevi početak",
+              "src": "machine",
+              "h": "2c387e36fdd6"
+            },
+            "leftEnd": {
+              "t": "Lijevi kraj",
+              "src": "machine",
+              "h": "45dd4986f4b6"
+            },
+            "rightStart": {
+              "t": "Desni početak",
+              "src": "machine",
+              "h": "1568d425c462"
+            },
+            "rightEnd": {
+              "t": "Desni kraj",
+              "src": "machine",
+              "h": "58ec0fc5f68c"
+            },
+            "leadingStart": {
+              "t": "Vodeći početak",
+              "src": "machine",
+              "h": "4c14362ea251"
+            },
+            "leading": {
+              "t": "Vodeći",
+              "src": "machine",
+              "h": "0b386122d8ef"
+            },
+            "leadingEnd": {
+              "t": "Vodeći kraj",
+              "src": "machine",
+              "h": "faf042d9f61f"
+            },
+            "trailingEnd": {
+              "t": "Trailingkraj",
+              "src": "machine",
+              "h": "131bdd91625d"
+            },
+            "trailing": {
+              "t": "Praćenje",
+              "src": "machine",
+              "h": "947db51ec233"
+            },
+            "trailingStart": {
+              "t": "Trailingpočetak",
+              "src": "machine",
+              "h": "d1f10edad2ac"
+            },
+            "calciteUiIconsNameEG": {
+              "t": "naziv calcite-ui-icons, npr. bell-f",
+              "src": "machine",
+              "h": "6e7cd08d2f26"
+            },
+            "livePreviewOfTheTypedIcon": {
+              "t": "Prethodni prikaz upisanog imena i veličine ikone",
+              "src": "machine",
+              "h": "dbd4407adc54"
+            },
+            "useAnyNameFromThe": {
+              "t": "Koristi bilo koje ime iz",
+              "src": "machine",
+              "h": "21e2e7668e7a"
+            },
+            "referencePasteTheExactNameShown": {
+              "t": "Referenca. Zalijepi točno ime prikazano na stranici (npr.",
+              "src": "machine",
+              "h": "2ee874f6843d"
+            },
+            "thePreviewToTheRightUpdates": {
+              "t": "). Pregled na ispravne ažuriranja kao što ste ukucali. Ako se isprazni, ime nije prepoznato.",
+              "src": "machine",
+              "h": "de005276a102"
+            },
+            "calciteUiIcons": {
+              "t": "Calcite UI ikone",
+              "src": "machine",
+              "h": "053ae4c10d58"
+            },
+            "dotColor": {
+              "t": "Boja točkice",
+              "src": "machine",
+              "h": "970aa0cd7fc8"
+            },
+            "notificationDotColor": {
+              "t": "Boja obavijesti o točki",
+              "src": "machine",
+              "h": "94fb3706afbe"
+            },
+            "colorOfTheIconAndDot": {
+              "t": "Boja ikone i točke su naslijeđene od teme. Koristite berače boja iznad ako želite prilagoditi, koji će premostiti boju teme.",
+              "src": "machine",
+              "h": "ba4b1ec7568c"
+            },
+            "alwaysShowDot": {
+              "t": "Uvijek prikaži točku",
+              "src": "machine",
+              "h": "1fa6f374882a"
+            },
+            "uiXFrameOptionsDeny": {
+              "t": "X-Frame-Opcije: DENY",
+              "src": "machine",
+              "h": "6bc6a2d122eb"
+            },
+            "uiBell": {
+              "t": "zvono",
+              "src": "machine",
+              "h": "04bf886e8ac2"
+            },
+            "uiBellF": {
+              "t": "Bell-f",
+              "src": "machine",
+              "h": "12d7a41447c2"
+            },
+            "uiChevronRight": {
+              "t": "kron-desno",
+              "src": "machine",
+              "h": "9274af1f085c"
+            }
+          }
         },
         "hu": {
           "file": "def2d0e0416f",
@@ -8847,18 +9182,269 @@
           }
         },
         "sr": {
-          "file": "76d7144b3fda",
+          "file": "a0744a71fcfd",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 50,
             "stale": 0,
-            "missing": 50
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "announcement": {
+              "t": "Objava",
+              "src": "machine",
+              "h": "cf84a98d6cf7"
+            },
+            "whatSNew": {
+              "t": "Šta je novo?",
+              "src": "machine",
+              "h": "a2efe202772f"
+            },
+            "announcementId": {
+              "t": "Identifikacija objavljivanja",
+              "src": "machine",
+              "h": "15386d1f9e25"
+            },
+            "newId": {
+              "t": "Nova identifikacija",
+              "src": "machine",
+              "h": "c93bfee73d0f"
+            },
+            "setIdToCurrentTimestampThis": {
+              "t": "Podesite ID trenutnom vremenskom tabelom. Ovo ponovo beleži sve korisnike.",
+              "src": "machine",
+              "h": "9dcdcd2c2bfe"
+            },
+            "afterEditingContentToReNotify": {
+              "t": "nakon uređivanja sadržaja za ponovno obavješćivanje svih korisnika.",
+              "src": "machine",
+              "h": "2f440ed6dcec"
+            },
+            "lastPublished": {
+              "t": "Poslednji put objavljeno:",
+              "src": "machine",
+              "h": "aaa5f3452d6c"
+            },
+            "contentType": {
+              "t": "_Sadržaj",
+              "src": "machine",
+              "h": "de15f753728a"
+            },
+            "richHtml": {
+              "t": "Bogati HTML",
+              "src": "machine",
+              "h": "816b396affe1"
+            },
+            "externalLink": {
+              "t": "Спољашња везаQShortcut",
+              "src": "machine",
+              "h": "66305476ff69"
+            },
+            "openInNewTab": {
+              "t": "Otvori u novoj kartici",
+              "src": "machine",
+              "h": "71bf47a72828"
+            },
+            "whenOffTheUrlLoadsIn": {
+              "t": "Kada je isključen, URL se učitava u iframu unutar popovera. Stranice koje šalju",
+              "src": "machine",
+              "h": "8d91b3ce1bc5"
+            },
+            "willRenderBlankEnableOpenIn": {
+              "t": "će iscrtati prazno. UključiteOtvorite u novoj kartici ili pređite na Rich HTML.",
+              "src": "machine",
+              "h": "7d4f7f675c75"
+            },
+            "htmlContent": {
+              "t": "HTML sadržaj",
+              "src": "machine",
+              "h": "4c4103818889"
+            },
+            "displayMode": {
+              "t": "Режим приказаQShortcut",
+              "src": "machine",
+              "h": "627bc304e730"
+            },
+            "popoverAnchoredToBell": {
+              "t": "Popoper (prihvaæeno zvonu)",
+              "src": "machine",
+              "h": "7965dd18a72d"
+            },
+            "modalCenteredOverlay": {
+              "t": "Modalni (središnje preklapanje)",
+              "src": "machine",
+              "h": "7b34ce4bfbbb"
+            },
+            "contentWidth": {
+              "t": "Širina sadržaja",
+              "src": "machine",
+              "h": "c0544c2d5fab"
+            },
+            "popoverPlacement": {
+              "t": "Popoper plasman",
+              "src": "machine",
+              "h": "6c79852fd761"
+            },
+            "autoDefault": {
+              "t": "Аутоматски (подебљано)",
+              "src": "machine",
+              "h": "41c7173e4b9a"
+            },
+            "autoStart": {
+              "t": "СамопокрениQShortcut",
+              "src": "machine",
+              "h": "8ae48a77f32a"
+            },
+            "autoEnd": {
+              "t": "Automatski završetak",
+              "src": "machine",
+              "h": "83b945a7e742"
+            },
+            "topStart": {
+              "t": "Top-start",
+              "src": "machine",
+              "h": "659bfad36481"
+            },
+            "topEnd": {
+              "t": "Top-end",
+              "src": "machine",
+              "h": "e5ba42f31c71"
+            },
+            "bottomStart": {
+              "t": "Donja-start",
+              "src": "machine",
+              "h": "ab24580fafb1"
+            },
+            "bottomEnd": {
+              "t": "Dno-kraja",
+              "src": "machine",
+              "h": "56d57871cf21"
+            },
+            "leftStart": {
+              "t": "Lijevi-start",
+              "src": "machine",
+              "h": "2c387e36fdd6"
+            },
+            "leftEnd": {
+              "t": "Lijevi kraj",
+              "src": "machine",
+              "h": "45dd4986f4b6"
+            },
+            "rightStart": {
+              "t": "Desni start",
+              "src": "machine",
+              "h": "1568d425c462"
+            },
+            "rightEnd": {
+              "t": "Desni kraj",
+              "src": "machine",
+              "h": "58ec0fc5f68c"
+            },
+            "leadingStart": {
+              "t": "Početak navoðenja",
+              "src": "machine",
+              "h": "4c14362ea251"
+            },
+            "leading": {
+              "t": "Vodeæi.",
+              "src": "machine",
+              "h": "0b386122d8ef"
+            },
+            "leadingEnd": {
+              "t": "Vodeæi kraj.",
+              "src": "machine",
+              "h": "faf042d9f61f"
+            },
+            "trailingEnd": {
+              "t": "Trailing-kraj",
+              "src": "machine",
+              "h": "131bdd91625d"
+            },
+            "trailing": {
+              "t": "Prateæi",
+              "src": "machine",
+              "h": "947db51ec233"
+            },
+            "trailingStart": {
+              "t": "Trailing-start",
+              "src": "machine",
+              "h": "d1f10edad2ac"
+            },
+            "calciteUiIconsNameEG": {
+              "t": "Kalcit-ui-icons name, npr. bell-f",
+              "src": "machine",
+              "h": "6e7cd08d2f26"
+            },
+            "livePreviewOfTheTypedIcon": {
+              "t": "Преглед уживо укуцаног имена и величине икона",
+              "src": "machine",
+              "h": "dbd4407adc54"
+            },
+            "useAnyNameFromThe": {
+              "t": "Koristi bilo koje ime iz",
+              "src": "machine",
+              "h": "21e2e7668e7a"
+            },
+            "referencePasteTheExactNameShown": {
+              "t": "referenca. Umetnite tačno ime prikazano na stranici (npr.",
+              "src": "machine",
+              "h": "2ee874f6843d"
+            },
+            "thePreviewToTheRightUpdates": {
+              "t": "). Pregled na ispravne ažuriranja kao što ste ukucali. Ako se isprazni, ime nije prepoznato.",
+              "src": "machine",
+              "h": "de005276a102"
+            },
+            "calciteUiIcons": {
+              "t": "Calcite UI ikone",
+              "src": "machine",
+              "h": "053ae4c10d58"
+            },
+            "dotColor": {
+              "t": "Boja tački",
+              "src": "machine",
+              "h": "970aa0cd7fc8"
+            },
+            "notificationDotColor": {
+              "t": "Boja tačke za obavještenja",
+              "src": "machine",
+              "h": "94fb3706afbe"
+            },
+            "colorOfTheIconAndDot": {
+              "t": "Boja ikone i tačke su nasleđene od teme. Koristite berače boja iznad ako želite da podesite, koji će premostiti boju teme.",
+              "src": "machine",
+              "h": "ba4b1ec7568c"
+            },
+            "alwaysShowDot": {
+              "t": "Uvek pokaži taèku.",
+              "src": "machine",
+              "h": "1fa6f374882a"
+            },
+            "uiXFrameOptionsDeny": {
+              "t": "X-Frame-Options: DENY",
+              "src": "machine",
+              "h": "6bc6a2d122eb"
+            },
+            "uiBell": {
+              "t": "zvono",
+              "src": "machine",
+              "h": "04bf886e8ac2"
+            },
+            "uiBellF": {
+              "t": "Bel-f",
+              "src": "machine",
+              "h": "12d7a41447c2"
+            },
+            "uiChevronRight": {
+              "t": "Chevron-desna",
+              "src": "machine",
+              "h": "9274af1f085c"
+            }
+          }
         },
         "sv": {
           "file": "963a4f26dedd",

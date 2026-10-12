@@ -3,12 +3,12 @@ System.register([], function (e) {
   return {
     execute: function () {
       e({
-        _widgetLabel: "What's New",
-        noLinkConfigured: "No link configured.",
-        varCalciteColorStatusDangerD83020: "var(--calcite-color-status-danger, #d83020)",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error",
-        valueNewUpdatesAvailable: "{value}, new updates available"
+        _widgetLabel: "Što je novo?",
+        noLinkConfigured: "Veza nije podešena.",
+        varCalciteColorStatusDangerD83020: "CRR-a.",
+        unknownError: "nepoznata greška",
+        unserializableError: "Neserijalizacijska greška",
+        valueNewUpdatesAvailable: "{value}, dostupna nova ažuriranja"
       })
     }
   }
