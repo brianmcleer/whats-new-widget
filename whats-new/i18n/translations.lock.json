@@ -87,27 +87,16 @@
         "bs": {
           "file": "9c63bffb351d",
           "counts": {
-            "esri": 0,
+            "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 2,
+            "machine": 0,
             "stale": 0,
             "missing": 4
           },
-          "entries": {
-            "unknownError": {
-              "t": "nepoznata greška",
-              "src": "machine",
-              "h": "af6321ca7a8b"
-            },
-            "unserializableError": {
-              "t": "Neserijalizacijska greška",
-              "src": "machine",
-              "h": "76e73551597a"
-            }
-          }
+          "entries": {}
         },
         "ca": {
           "file": "0b86bedb7b85",
@@ -462,12 +451,12 @@
         "hr": {
           "file": "6deba64cc2fd",
           "counts": {
-            "esri": 0,
+            "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 6,
+            "machine": 4,
             "stale": 0,
             "missing": 0
           },
@@ -486,16 +475,6 @@
               "t": "CRR-a.",
               "src": "machine",
               "h": "4bb581e02c08"
-            },
-            "unknownError": {
-              "t": "nepoznata greška",
-              "src": "machine",
-              "h": "af6321ca7a8b"
-            },
-            "unserializableError": {
-              "t": "Neserijalizacijska greška",
-              "src": "machine",
-              "h": "76e73551597a"
             },
             "valueNewUpdatesAvailable": {
               "t": "{value}, dostupna nova ažuriranja",
@@ -1067,12 +1046,12 @@
         "sr": {
           "file": "d95b64a3d075",
           "counts": {
-            "esri": 0,
+            "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 6,
+            "machine": 4,
             "stale": 0,
             "missing": 0
           },
@@ -1091,16 +1070,6 @@
               "t": "var(--kalcite-color-status-danger, #d83020)",
               "src": "machine",
               "h": "4bb581e02c08"
-            },
-            "unknownError": {
-              "t": "nepoznata greška",
-              "src": "machine",
-              "h": "af6321ca7a8b"
-            },
-            "unserializableError": {
-              "t": "Neserijalizacijska greška",
-              "src": "machine",
-              "h": "76e73551597a"
             },
             "valueNewUpdatesAvailable": {
               "t": "{value}, dostupna su nova ažuriranja",
