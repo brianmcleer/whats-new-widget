@@ -8,7 +8,9 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "var( -calcte-color- autador, # d83020)",
         unknownError: "error desconegut",
         unserializableError: "Error no llegible",
-        valueNewUpdatesAvailable: "{value}, noves actualitzacions disponibles"
+        valueNewUpdatesAvailable: "{value}, noves actualitzacions disponibles",
+        openLink: "Obre l' enllaç",
+        noContentConfigured: "No content configured."
       })
     }
   }

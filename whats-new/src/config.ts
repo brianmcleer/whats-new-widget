@@ -3,6 +3,7 @@ import type { ImmutableObject } from 'seamless-immutable'
 export type ContentMode = 'link' | 'html'
 export type DisplayMode = 'popover' | 'modal'
 export type ActionSize = 's' | 'm' | 'l'
+export type FeedAudience = '' | 'internal' | 'external'
 
 export const placements = [
     'auto',
@@ -59,6 +60,21 @@ export interface Config {
     contentWidth: number
     /** Logical placement of the popover relative to the bell (popover mode only) */
     placement: LogicalPlacement
+    /**
+     * Notification feed: REST URL of a public hosted table (.../FeatureServer/0).
+     * Blank turns the feed off and the widget behaves as it did before 1.2.0.
+     */
+    feedUrl?: string
+    /** Which audience this app belongs to: '', 'internal' or 'external' */
+    feedAudience?: FeedAudience
+    /** This app's tag, matched against a message's apps list (e.g. 'city-map') */
+    feedAppTag?: string
+    /** Minutes between feed checks while the app is open (0 = on load only) */
+    feedRefreshMinutes?: number
+    /** Let messages flagged popup open the panel by themselves, once per user */
+    feedAutoOpen?: boolean
+    /** Color the bell while a maintenance or outage message is active */
+    feedTintBell?: boolean
 }
 
-export type IMConfig = ImmutableObject<Config>
+export type IMConfig = ImmutableObject<Config>

@@ -14,7 +14,8 @@ import {
     NumericInput
 } from 'jimu-ui'
 import { ColorPicker } from 'jimu-ui/basic/color-picker'
-import type { IMConfig, LogicalPlacement } from '../config'
+import type { IMConfig, LogicalPlacement, FeedAudience } from '../config'
+import { fetchFeedRows, normalizeFeedUrl, selectMessages } from '../shared/feed'
 import 'calcite-components'
 import { hooks as __exbI18nHooks } from 'jimu-core';
 import __exbI18nMessages from './translations/default';
@@ -122,6 +123,28 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
 
     const publishedDate = parsePublishedDate(config.announcementId || '')
 
+    // Result line under the feed "Test" button: '' (nothing yet), or a message.
+    const [feedTest, setFeedTest] = React.useState<{ ok: boolean, text: string } | null>(null)
+    const [feedTesting, setFeedTesting] = React.useState(false)
+    const feedUrlValue = (config.feedUrl || '').trim()
+    const feedUrlBad = !!feedUrlValue && !normalizeFeedUrl(feedUrlValue)
+
+    const testFeed = async () => {
+        setFeedTesting(true)
+        setFeedTest(null)
+        try {
+            const rows = await fetchFeedRows(feedUrlValue)
+            const shown = selectMessages(rows, {
+                audience: config.feedAudience || '',
+                appTag: config.feedAppTag || ''
+            })
+            setFeedTest({ ok: true, text: __t('feedTestOk', { total: rows.length, shown: shown.length }) })
+        } catch (e) {
+            setFeedTest({ ok: false, text: __t('feedTestFailed', { value: String((e && (e as any).message) || e) }) })
+        }
+        setFeedTesting(false)
+    }
+
     return (
         <div className="whats-new-setting">
             <SettingSection title={t('announcement')}>
@@ -208,6 +231,101 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
                             style={{ fontFamily: 'monospace', fontSize: 12, width: '100%' }}
                         />
                     </SettingRow>
+                )}
+            </SettingSection>
+
+            <SettingSection title={t('notificationFeed')}>
+                <SettingRow label={t('feedTableUrl')} flow="wrap">
+                    <div css={idRow}>
+                        <div css={idInputWrap}>
+                            <TextInput
+                                value={config.feedUrl || ''}
+                                onChange={(e) => { setFeedTest(null); update('feedUrl', e.target.value) }}
+                                placeholder="https://services.arcgis.com/.../FeatureServer/0"
+                                style={{ width: '100%' }}
+                            />
+                        </div>
+                        <Button
+                            size="sm"
+                            disabled={!feedUrlValue || feedUrlBad || feedTesting}
+                            title={t('feedTestTitle')}
+                            onClick={() => { testFeed() }}
+                        >
+                            {t('feedTest')}
+                        </Button>
+                    </div>
+                </SettingRow>
+                <div css={helperText}>
+                    {t('feedUrlHelp')}
+                    {feedUrlBad && (
+                        <Fragment>
+                            <br /><strong>{t('feedUrlInvalid')}</strong>
+                        </Fragment>
+                    )}
+                    {feedTest && (
+                        <Fragment>
+                            <br /><strong style={{ color: feedTest.ok ? 'var(--calcite-color-status-success, #35ac46)' : 'var(--calcite-color-status-danger, #d83020)' }}>{feedTest.text}</strong>
+                        </Fragment>
+                    )}
+                </div>
+
+                {!!feedUrlValue && (
+                    <Fragment>
+                        <SettingRow label={t('feedAudience')} flow="wrap">
+                            <Select
+                                value={config.feedAudience || ''}
+                                onChange={(e) => { setFeedTest(null); update('feedAudience', e.target.value as FeedAudience) }}
+                                style={{ width: '100%' }}
+                            >
+                                <Option value="">{t('feedAudienceAny')}</Option>
+                                <Option value="internal">{t('feedAudienceInternal')}</Option>
+                                <Option value="external">{t('feedAudienceExternal')}</Option>
+                            </Select>
+                        </SettingRow>
+
+                        <SettingRow label={t('feedAppTag')} flow="wrap">
+                            <TextInput
+                                value={config.feedAppTag || ''}
+                                onChange={(e) => { setFeedTest(null); update('feedAppTag', e.target.value) }}
+                                placeholder="city-map"
+                                style={{ width: '100%' }}
+                            />
+                        </SettingRow>
+                        <div css={helperText}>
+                            {t('feedTargetHelp')}
+                        </div>
+
+                        <SettingRow label={t('feedRefreshMinutes')} flow="wrap">
+                            <NumericInput
+                                value={config.feedRefreshMinutes == null ? 5 : config.feedRefreshMinutes}
+                                min={0}
+                                max={1440}
+                                precision={0}
+                                onChange={(value) => { update('feedRefreshMinutes', value == null ? 0 : value) }}
+                                style={{ width: '100%' }}
+                            />
+                        </SettingRow>
+                        <div css={helperText}>
+                            {t('feedRefreshHelp')}
+                        </div>
+
+                        <SettingRow label={t('feedAutoOpen')} flow="no-wrap">
+                            <Switch
+                                checked={config.feedAutoOpen !== false}
+                                onChange={(e) => { update('feedAutoOpen', e.target.checked) }}
+                            />
+                        </SettingRow>
+                        <div css={helperText}>
+                            {t('feedAutoOpenHelp')}
+                        </div>
+
+                        <SettingRow label={t('feedTintBell')} flow="no-wrap">
+                            <Switch
+                                checked={config.feedTintBell !== false}
+                                onChange={(e) => { update('feedTintBell', e.target.checked) }}
+                            />
+                        </SettingRow>
+                    </Fragment>
                 )}
             </SettingSection>
 
@@ -332,4 +450,4 @@ export default function Setting (props: AllWidgetSettingProps<IMConfig>) {
             </SettingSection>
         </div>
     )
-}
+}

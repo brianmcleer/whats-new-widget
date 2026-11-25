@@ -12,5 +12,11 @@
   "icon": "bell-f",
   "iconSize": "m",
   "contentWidth": 320,
-  "placement": "auto"
+  "placement": "auto",
+  "feedUrl": "",
+  "feedAudience": "",
+  "feedAppTag": "",
+  "feedRefreshMinutes": 5,
+  "feedAutoOpen": true,
+  "feedTintBell": true
 }

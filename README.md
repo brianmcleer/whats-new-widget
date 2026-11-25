@@ -7,6 +7,11 @@ notification pattern to public-facing map applications. Click the bell to
 see what's new, dot disappears across browser sessions until the next
 announcement is published.
 
+Version 1.2.0 adds an optional notification feed: the bell can also read
+messages from one shared hosted table, so a notice such as planned
+maintenance or an outage reaches every app that carries the widget
+without republishing any of them.
+
 Uses the [Calcite Design System](https://developers.arcgis.com/calcite-design-system/)
 for the popover and dialog (`calcite-popover`, `calcite-dialog`,
 `calcite-icon`), so positioning, theming, RTL, and accessibility come
@@ -36,7 +41,34 @@ original widget by the City of Grand Junction GIS Division.
   direct entry); indicator dot scales with the icon
 - Configurable popover placement (21 logical placements)
 - Configurable icon and dot colors via Calcite color pickers
-- Pure client-side, no backend, no server-side state
+- Optional notification feed (1.2.0): point the widget at a public hosted
+  table in ArcGIS Online or ArcGIS Enterprise and every app shows new
+  messages on its next check, with no republish
+- Feed messages have a type (what's new, info, maintenance, outage), an
+  optional start and end time, and can target all apps, internal or
+  external apps, or a list of app tags
+- Urgent feed messages can open the panel by themselves, once per user,
+  and the bell takes the Calcite warning or danger color during
+  maintenance or an outage
+- Feed text is sanitized before display, and the widget falls back to its
+  own content if the table cannot be reached
+- Pure client-side. No backend is needed unless the feed is used, and
+  then only a read-only hosted table
+
+## Notification feed
+
+The widget's own content is saved in each app, so changing it means
+editing and republishing that app. The feed is for messages that have to
+reach many apps at once. Add a row to one hosted table and every app
+whose widget points at it shows the message within a few minutes.
+
+Host the table somewhere that stays up when the apps' own servers are
+down. A table in ArcGIS Online keeps working through an ArcGIS Enterprise
+upgrade, which is when a maintenance notice matters most.
+
+The table fields, the settings and the behavior are documented in
+[`whats-new/README.md`](whats-new/README.md#notification-feed). Apps that
+leave the feed URL blank behave exactly as they did before 1.2.0.
 
 ## Repo layout
 
@@ -61,8 +93,11 @@ whats-new-widget/
         ├── calcite-elements.d.ts
         ├── runtime/
         │   └── widget.tsx
-        └── setting/
-            └── setting.tsx
+        ├── setting/
+        │   └── setting.tsx
+        └── shared/
+            ├── beacon.ts    <- anonymous usage telemetry
+            └── feed.ts      <- notification feed reader and sanitizer
 ```
 
 ## Install (end-users)
@@ -98,7 +133,7 @@ powershell -ExecutionPolicy Bypass -File .\publish.ps1 -Release v1.2.0
 
 First run auto-creates the GitHub repo via `gh` CLI. Subsequent runs just
 push. The script reads from
-`C:\arcgis-experience-builder-1.20\client\your-extensions\widgets\whats-new`.
+`C:\arcgis-experience-builder-1.21\client\your-extensions\widgets\whats-new`.
 Edit the three variables at the top of `publish.ps1` if any of that changes.
 
 ## Version compatibility

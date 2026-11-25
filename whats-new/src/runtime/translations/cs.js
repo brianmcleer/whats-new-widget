@@ -8,7 +8,9 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "var (--calcite-color- status-danger, # d83020)",
         unknownError: "neznámá chyba",
         unserializableError: "neserializovatelná chyba",
-        valueNewUpdatesAvailable: "{value}, nové aktualizace k dispozici"
+        valueNewUpdatesAvailable: "{value}, nové aktualizace k dispozici",
+        openLink: "Otevřít odkaz",
+        noContentConfigured: "No content configured."
       })
     }
   }

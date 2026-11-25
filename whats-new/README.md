@@ -94,6 +94,64 @@ The override **Always show dot** keeps the dot visible permanently, useful
 if you want a static "news / help" affordance instead of a one-time
 notification.
 
+## Notification feed
+
+The widget's own content is saved in each app, so changing it means editing
+and republishing that app. The notification feed is for messages that have to
+reach many apps at once, such as planned maintenance or an outage. Messages
+live in one shared hosted table. Every app whose widget points at the table
+shows a new message on its next check, with no republish.
+
+Host the table somewhere that stays up when the apps' own servers are down.
+A table in ArcGIS Online keeps working through an ArcGIS Enterprise upgrade.
+
+### Table
+
+A hosted table shared with everyone, with editing turned off. The owner and
+administrators can still edit rows from the item's Data tab or by script.
+
+| Field | Type | Use |
+|---|---|---|
+| `msg_id` | text | Unique id. A new id re-notifies every user. |
+| `title` | text | Short headline. |
+| `body` | text | Plain text or simple HTML. |
+| `msg_type` | text | `whatsnew`, `info`, `maintenance` or `outage`. |
+| `start_time` | date | Optional. Hidden before this time. |
+| `end_time` | date | Optional. Hidden after this time. |
+| `audience` | text | `all`, `internal` or `external`. Blank means all. |
+| `apps` | text | Comma list of app tags. Blank means every app. |
+| `popup` | integer | `1` opens the panel by itself, once per user. |
+| `active` | integer | `1` to show, `0` to hide without deleting the row. |
+
+### Settings
+
+- **Feed table URL.** The table's REST URL, ending in `/FeatureServer/0`.
+  Blank turns the feed off. **Test** reads the table and reports how many
+  messages the app would show.
+- **This app is.** Internal or External, matched against a message's
+  `audience`.
+- **App tag.** A short name for the app (for example `city-map`), matched
+  against a message's `apps` list.
+- **Check every (minutes).** How often an open app looks for new messages.
+  Default 5. `0` checks only on load.
+- **Let urgent messages open by themselves.** Honors the `popup` field.
+- **Color the bell for maintenance and outages.** Uses the Calcite warning
+  and danger colors while such a message is active.
+
+### Behavior
+
+- Feed messages show above the widget's own content, most urgent first.
+- The dot shows when the user has not seen a feed message or the current
+  announcement. Seen feed ids are stored in `localStorage` under
+  `whatsnew:<widgetId>:feedseen`.
+- If the table cannot be reached, the widget keeps what it already has and
+  shows its own content. Nothing breaks.
+- With a feed URL set and the widget's own content left blank, the widget
+  runs on feed messages alone.
+- Feed text is not trusted. It is sanitized to simple formatting tags and
+  web, mail and phone links before display. Keep the table read only for the
+  public all the same.
+
 ## Content modes
 
 **Rich HTML.** Paste HTML directly into the settings textarea. Rendered

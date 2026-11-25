@@ -4,5 +4,7 @@ export default {
   varCalciteColorStatusDangerD83020: 'var(--calcite-color-status-danger, #d83020)',
   unknownError: 'unknown error',
   unserializableError: 'unserializable error',
-  valueNewUpdatesAvailable: '{value}, new updates available'
+  valueNewUpdatesAvailable: '{value}, new updates available',
+  openLink: 'Open link',
+  noContentConfigured: 'No content configured.'
 }
