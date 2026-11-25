@@ -8,7 +8,10 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "Var(-calcite-color-status-danger, #d83020)",
         unknownError: "Bilinmeyen hata",
         unserializableError: "Başarısız olmayan hata",
-        valueNewUpdatesAvailable: "{value}, mevcut yeni güncellemeler"
+        valueNewUpdatesAvailable: "{value}, mevcut yeni güncellemeler",
+        openLink: "Açık bağlantı",
+        noContentConfigured: "No content configured.",
+        noNotifications: "No notifications right now."
       })
     }
   }

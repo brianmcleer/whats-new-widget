@@ -10,7 +10,8 @@ System.register([], function (e) {
         unserializableError: "Error no llegible",
         valueNewUpdatesAvailable: "{value}, noves actualitzacions disponibles",
         openLink: "Obre l' enllaç",
-        noContentConfigured: "No content configured."
+        noContentConfigured: "No content configured.",
+        noNotifications: "No notifications right now."
       })
     }
   }

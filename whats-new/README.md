@@ -151,6 +151,12 @@ administrators can still edit rows from the item's Data tab or by script.
 - Feed text is not trusted. It is sanitized to simple formatting tags and
   web, mail and phone links before display. Keep the table read only for the
   public all the same.
+- ArcGIS Online also checks text fields when a row is saved and rejects the
+  edit when it finds HTML it does not allow ("unsafe html content", error
+  1006). Keep message bodies to plain text or basic tags: `<p>`,
+  `<strong>`, `<em>`, `<ul>`, `<ol>`, `<li>`, `<br>` and `<a>`. For
+  a sub-heading use a bold paragraph, `<p><strong>What to expect</strong></p>`,
+  instead of a heading tag.
 
 ## Content modes
 

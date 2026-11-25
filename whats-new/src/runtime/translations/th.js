@@ -8,7 +8,10 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "VARIANCE(-- Ccalite-color-status-danguage, # d83020)",
         unknownError: "ข้อผิดพลาดไม่ทราบสาเหตุ",
         unserializableError: "ข้อผิดพลาดที่ไม่สามารถตรวจสอบได้",
-        valueNewUpdatesAvailable: "{value}การปรับปรุงใหม่ที่มีอยู่"
+        valueNewUpdatesAvailable: "{value}การปรับปรุงใหม่ที่มีอยู่",
+        openLink: "เปิดลิงก์",
+        noContentConfigured: "No content configured.",
+        noNotifications: "No notifications right now."
       })
     }
   }

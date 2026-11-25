@@ -10,7 +10,8 @@ System.register([], function (e) {
         unserializableError: "несериозна грешка",
         valueNewUpdatesAvailable: "{value}, нови актуализации",
         openLink: "Отваряне на връзка",
-        noContentConfigured: "No content configured."
+        noContentConfigured: "No content configured.",
+        noNotifications: "No notifications right now."
       })
     }
   }

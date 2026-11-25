@@ -66,7 +66,26 @@ System.register([], function (e) {
         uiXFrameOptionsDeny: "X-Frame-Options: DENY",
         uiBell: "bell",
         uiBellF: "bell-f",
-        uiChevronRight: "chevron-right"
+        uiChevronRight: "chevron-right",
+        notificationFeed: "Notification feed",
+        feedTableUrl: "Feed table URL",
+        feedTest: "Test",
+        feedTestTitle: "Read the table now and count the messages this app would show.",
+        feedUrlHelp: "Optional. REST URL of a public hosted table. Messages added to the table show in every app that points at it, with no republish. Leave blank to use only the content above.",
+        feedUrlInvalid: "This is not a table URL. It should start with https and end in /FeatureServer/0.",
+        feedTestOk: "Connected. {total} active in the table, {shown} would show in this app right now.",
+        feedTestFailed: "Could not read the table: {value}",
+        feedAudience: "This app is",
+        feedAudienceAny: "Not set (only messages for everyone)",
+        feedAudienceInternal: "Interno",
+        feedAudienceExternal: "External",
+        feedAppTag: "App tag",
+        feedTargetHelp: "A message can be sent to everyone, to internal or external apps only, or to a list of app tags. Give this app a short tag (e.g. city-map) so a message can name it.",
+        feedRefreshMinutes: "Check every (minutes)",
+        feedRefreshHelp: "How often an open app looks for new messages. 0 checks only when the app loads.",
+        feedAutoOpen: "Let urgent messages open by themselves",
+        feedAutoOpenHelp: "A message flagged as popup in the table opens the panel once per user when it arrives.",
+        feedTintBell: "Color the bell for maintenance and outages"
       })
     }
   }

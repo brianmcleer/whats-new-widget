@@ -10,7 +10,8 @@ System.register([], function (e) {
         unserializableError: "neserializovatelná chyba",
         valueNewUpdatesAvailable: "{value}, nové aktualizace k dispozici",
         openLink: "Otevřít odkaz",
-        noContentConfigured: "No content configured."
+        noContentConfigured: "No content configured.",
+        noNotifications: "No notifications right now."
       })
     }
   }

@@ -8,7 +8,10 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "var(----calcite-color-status-danger, #d83020)를 표현합니다.",
         unknownError: "알 수없는 오류",
         unserializableError: "unserializable 오류",
-        valueNewUpdatesAvailable: "{value}, 유효한 새로운 갱신"
+        valueNewUpdatesAvailable: "{value}, 유효한 새로운 갱신",
+        openLink: "관련 링크",
+        noContentConfigured: "No content configured.",
+        noNotifications: "No notifications right now."
       })
     }
   }

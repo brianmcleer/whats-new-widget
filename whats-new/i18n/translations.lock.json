@@ -3,28 +3,31 @@
   "generator": "exb-i18n-kit",
   "parts": {
     "runtime": {
-      "en": "70ca4bb03b60",
-      "keys": 6,
+      "en": "5ff9d6cb00ef",
+      "keys": 9,
       "hashes": {
         "_widgetLabel": "a2efe202772f",
         "noLinkConfigured": "645af7856cf9",
         "varCalciteColorStatusDangerD83020": "4bb581e02c08",
         "unknownError": "af6321ca7a8b",
         "unserializableError": "76e73551597a",
-        "valueNewUpdatesAvailable": "168da5a0f88a"
+        "valueNewUpdatesAvailable": "168da5a0f88a",
+        "openLink": "d2de1a2831e7",
+        "noContentConfigured": "50ba9629c8c4",
+        "noNotifications": "24a6c5831511"
       },
       "locales": {
         "ar": {
-          "file": "f9b8cd0afef8",
+          "file": "16ead31b759d",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
-            "manual": 0,
+            "manual": 1,
             "existing": 0,
             "machine": 4,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -46,20 +49,25 @@
               "t": "{value}المعلومات الجديدة المتاحة",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "وصلة مفتوحة",
+              "src": "manual",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "bg": {
-          "file": "9fd58cefc680",
+          "file": "dbee84ece094",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
-            "manual": 0,
+            "manual": 1,
             "existing": 0,
             "machine": 4,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -81,34 +89,45 @@
               "t": "{value}, нови актуализации",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Отваряне на връзка",
+              "src": "manual",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "bs": {
-          "file": "9c63bffb351d",
+          "file": "a1690a01d009",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
-            "manual": 0,
+            "manual": 1,
             "existing": 0,
             "machine": 0,
             "stale": 0,
-            "missing": 4
+            "missing": 6
           },
-          "entries": {}
+          "entries": {
+            "openLink": {
+              "t": "Otvori link",
+              "src": "manual",
+              "h": "d2de1a2831e7"
+            }
+          }
         },
         "ca": {
-          "file": "0b86bedb7b85",
+          "file": "a05372e60a36",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
-            "manual": 0,
+            "manual": 1,
             "existing": 0,
             "machine": 4,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -130,20 +149,25 @@
               "t": "{value}, noves actualitzacions disponibles",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Obre l' enllaç",
+              "src": "manual",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "cs": {
-          "file": "c749779b562b",
+          "file": "b97f2cc1453f",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
-            "manual": 0,
+            "manual": 1,
             "existing": 0,
             "machine": 4,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -165,20 +189,25 @@
               "t": "{value}, nové aktualizace k dispozici",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Otevřít odkaz",
+              "src": "manual",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "da": {
-          "file": "ef408d01e25f",
+          "file": "cbc120299c84",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -200,20 +229,25 @@
               "t": "{value}, nye opdateringer tilgængelige",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Åbn link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "de": {
-          "file": "07abcd3ba7d2",
+          "file": "e597a5efca21",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -235,20 +269,25 @@
               "t": "{value}, neue Updates verfügbar",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Offener Link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "el": {
-          "file": "4022130e5fd7",
+          "file": "014a897b814a",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -270,20 +309,25 @@
               "t": "{value}, νέες διαθέσιμες ενημερώσεις",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Άνοιγμα δεσμού",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "es": {
-          "file": "ae9497600e62",
+          "file": "380020edc929",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -305,20 +349,25 @@
               "t": "{value}, nuevas actualizaciones disponibles",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Enlace abierto",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "et": {
-          "file": "491f2e835a4c",
+          "file": "de891e3b3304",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -340,20 +389,25 @@
               "t": "{value}, uued uuendused kättesaadavad",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Ava link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "fi": {
-          "file": "679b037dff77",
+          "file": "f532fbdaa8bf",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -375,20 +429,25 @@
               "t": "{value}, uudet päivitykset saatavilla",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Avoin linkki",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "fr": {
-          "file": "c2d20c46ee9c",
+          "file": "236cb626e8c3",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -410,20 +469,25 @@
               "t": "{value}, nouvelles mises à jour disponibles",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Ouvrir le lien",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "he": {
-          "file": "6a5a41e9acc1",
+          "file": "636e46b9be31",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -445,20 +509,25 @@
               "t": "{value}עדכונים חדשים זמינים",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "קישור פתוח",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "hr": {
-          "file": "6deba64cc2fd",
+          "file": "2942a71dbbd3",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -480,20 +549,25 @@
               "t": "{value}, dostupna nova ažuriranja",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Otvori poveznicu",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "hu": {
-          "file": "508b64423760",
+          "file": "ae9b41d06530",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -515,20 +589,25 @@
               "t": "{value}, új frissítések állnak rendelkezésre",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Megnyitás",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "id": {
-          "file": "8fc3e0c529da",
+          "file": "68ecd6a56b85",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -550,20 +629,25 @@
               "t": "{value}, pemutakhiran baru tersedia",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Buka tautan",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "it": {
-          "file": "72a0e43f5983",
+          "file": "1b78a7ec0a41",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -585,20 +669,25 @@
               "t": "{value}, nuovi aggiornamenti disponibili",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Apri il link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "ja": {
-          "file": "372a2e09dbbd",
+          "file": "38631a2ffbb8",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -620,20 +709,25 @@
               "t": "{value}、利用できる新しい更新",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "サイトマップ",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "ko": {
-          "file": "f397ac19a999",
+          "file": "570ce9a0f6de",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -655,20 +749,25 @@
               "t": "{value}, 유효한 새로운 갱신",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "관련 링크",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "lt": {
-          "file": "b4f4c87fa8ef",
+          "file": "bf15c6a7cbe2",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -690,20 +789,25 @@
               "t": "{value}, prieinami nauji atnaujinimai",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Atvira nuoroda",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "lv": {
-          "file": "7c8630ab10ab",
+          "file": "927c7bf121df",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -725,20 +829,25 @@
               "t": "{value}, pieejami jauni atjauninājumi",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Atvērt saiti",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "no": {
-          "file": "777a121ba28f",
+          "file": "381d93e4c6ea",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -760,20 +869,25 @@
               "t": "{value}Ny oppdatering tilgjengelig",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Åpne lenke",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "nl": {
-          "file": "af6d92cdc1c5",
+          "file": "64540c8060b8",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -795,20 +909,25 @@
               "t": "{value}, nieuwe updates beschikbaar",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Verwijzing openen",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "pl": {
-          "file": "1dc5d9b6b5e3",
+          "file": "c4aa540139dc",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -830,20 +949,25 @@
               "t": "{value}, nowe aktualizacje dostępne",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Otwórz link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "pt-br": {
-          "file": "78cce8030022",
+          "file": "6daf4bc97063",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -865,20 +989,25 @@
               "t": "{value}, novas atualizações disponíveis",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Abrir link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "pt-pt": {
-          "file": "7738fb2318e1",
+          "file": "71c10f9703e0",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -900,20 +1029,25 @@
               "t": "{value}, novas atualizações disponíveis",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Abrir link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "ro": {
-          "file": "0e38521b7daa",
+          "file": "0130b18c22ef",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -935,20 +1069,25 @@
               "t": "{value}, noi actualizări disponibile",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Deschide legătura",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "ru": {
-          "file": "581f335c94ab",
+          "file": "4170656c2d16",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -970,20 +1109,25 @@
               "t": "{value}Доступны новые обновления",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Открытая ссылка",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "sk": {
-          "file": "ec86e77a85ea",
+          "file": "d5ea56aae976",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1005,20 +1149,25 @@
               "t": "{value}, nové dostupné aktualizácie",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Otvoriť odkaz",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "sl": {
-          "file": "9d524907d92a",
+          "file": "fc78f191adf2",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1040,20 +1189,25 @@
               "t": "{value}, nove razpoložljive posodobitve",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Odpri povezavo",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "sr": {
-          "file": "d95b64a3d075",
+          "file": "44515ab42143",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1075,20 +1229,25 @@
               "t": "{value}, dostupna su nova ažuriranja",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Otvori link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "sv": {
-          "file": "f854529bdafc",
+          "file": "37a0ae07bb34",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1110,20 +1269,25 @@
               "t": "{value}nya uppdateringar tillgängliga",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Öppen länk",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "th": {
-          "file": "63ab39574486",
+          "file": "4184d8573b1f",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1145,20 +1309,25 @@
               "t": "{value}การปรับปรุงใหม่ที่มีอยู่",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "เปิดลิงก์",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "tr": {
-          "file": "7a60379e0b05",
+          "file": "675ebb6aa5c0",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1180,20 +1349,25 @@
               "t": "{value}, mevcut yeni güncellemeler",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Açık bağlantı",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "zh-cn": {
-          "file": "61f61d561d99",
+          "file": "63202ece6f9a",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1215,20 +1389,25 @@
               "t": "{value},有新的更新",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "打开链接",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "uk": {
-          "file": "56e4af85a1e3",
+          "file": "79b22a99a1f1",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1250,20 +1429,25 @@
               "t": "{value}нові оновлення доступні",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Відкрити посилання",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "vi": {
-          "file": "307811f54cc3",
+          "file": "3d4a35b972d7",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1285,20 +1469,25 @@
               "t": "{value}, các cập nhật có sẵn",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "Mở liên kết",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "zh-hk": {
-          "file": "6c48b1f9013a",
+          "file": "842fa88bf735",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1320,20 +1509,25 @@
               "t": "{value},有新的更新",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "開啟連結",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         },
         "zh-tw": {
-          "file": "6c48b1f9013a",
+          "file": "842fa88bf735",
           "counts": {
             "esri": 2,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 4,
+            "machine": 5,
             "stale": 0,
-            "missing": 0
+            "missing": 2
           },
           "entries": {
             "_widgetLabel": {
@@ -1355,14 +1549,19 @@
               "t": "{value},有新的更新",
               "src": "machine",
               "h": "168da5a0f88a"
+            },
+            "openLink": {
+              "t": "開啟連結",
+              "src": "machine",
+              "h": "d2de1a2831e7"
             }
           }
         }
       }
     },
     "setting": {
-      "en": "13677d731e3f",
-      "keys": 64,
+      "en": "28f6702dd356",
+      "keys": 83,
       "hashes": {
         "announcement": "cf84a98d6cf7",
         "title": "768e0c1c6957",
@@ -1427,20 +1626,39 @@
         "uiXFrameOptionsDeny": "6bc6a2d122eb",
         "uiBell": "04bf886e8ac2",
         "uiBellF": "12d7a41447c2",
-        "uiChevronRight": "9274af1f085c"
+        "uiChevronRight": "9274af1f085c",
+        "notificationFeed": "199210616c7f",
+        "feedTableUrl": "bd86c246b24f",
+        "feedTest": "640ab2bae07b",
+        "feedTestTitle": "8d7ed0107b81",
+        "feedUrlHelp": "c41be942f4d2",
+        "feedUrlInvalid": "7c1ed5c919d1",
+        "feedTestOk": "9eb5a21be178",
+        "feedTestFailed": "61dddcf17a68",
+        "feedAudience": "cda0d31dfb35",
+        "feedAudienceAny": "c0a685b8e4af",
+        "feedAudienceInternal": "fc9225a1693f",
+        "feedAudienceExternal": "8d10c693b773",
+        "feedAppTag": "dd2a23a17f65",
+        "feedTargetHelp": "2e31ba8c6289",
+        "feedRefreshMinutes": "e8957f96197f",
+        "feedRefreshHelp": "c73cd197bd60",
+        "feedAutoOpen": "d28005ffcab6",
+        "feedAutoOpenHelp": "7a4cfedc5d4f",
+        "feedTintBell": "3f2f59221217"
       },
       "locales": {
         "ar": {
-          "file": "32eede2e90b1",
+          "file": "eae12d8ff4f5",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -1692,20 +1910,30 @@
               "t": "Cheevron-right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "الاختبار",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "داخلي",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "bg": {
-          "file": "d02c33033ec2",
+          "file": "333afa5d6365",
           "counts": {
             "esri": 11,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -1957,20 +2185,30 @@
               "t": "десен лебед",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Изпитване",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Вътрешен",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "bs": {
-          "file": "c64b53f61750",
+          "file": "188401f6d3b7",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 2,
+            "machine": 4,
             "stale": 0,
-            "missing": 48
+            "missing": 65
           },
           "entries": {
             "openInNewTab": {
@@ -1982,20 +2220,30 @@
               "t": "Prikaz",
               "src": "machine",
               "h": "627bc304e730"
+            },
+            "feedTest": {
+              "t": "Test",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Interno",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "ca": {
-          "file": "b8b372deaf8d",
+          "file": "68bb39f4a108",
           "counts": {
             "esri": 9,
             "esri-check": 5,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -2247,20 +2495,30 @@
               "t": "chevron- dreta",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Prova",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Intern",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "cs": {
-          "file": "412c6eb1051f",
+          "file": "77427146c89e",
           "counts": {
             "esri": 8,
             "esri-check": 6,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -2512,20 +2770,30 @@
               "t": "Chevron- vpravo",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Zkouška",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Vnitřní",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "da": {
-          "file": "ba6cca545c8a",
+          "file": "d5d6104bfd00",
           "counts": {
             "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 51,
+            "machine": 53,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -2782,20 +3050,30 @@
               "t": "chevron- højre",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Prøvning",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Intern",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "de": {
-          "file": "e9748f54fcf3",
+          "file": "b88e042adb98",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -3047,20 +3325,30 @@
               "t": "chevron-right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Test",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Internes",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "el": {
-          "file": "77e13cbad0bf",
+          "file": "a1459cc506b0",
           "counts": {
             "esri": 10,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -3312,20 +3600,30 @@
               "t": "ακροδεξιά",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Δοκιμή",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Εσωτερικό",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "es": {
-          "file": "dcac51e5f0f4",
+          "file": "f7837baa1d99",
           "counts": {
             "esri": 10,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -3577,20 +3875,30 @@
               "t": "chevron-right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Prueba",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Internos",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "et": {
-          "file": "7bd442ad883e",
+          "file": "377047d3716f",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -3842,20 +4150,30 @@
               "t": "glüüfparem",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Testi",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Sisemine",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "fi": {
-          "file": "0bc542887f1f",
+          "file": "18be83089a36",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -4107,20 +4425,30 @@
               "t": "merkki oikealla",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Testi",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Sisäinen",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "fr": {
-          "file": "93729cebf9b5",
+          "file": "8432c1c62a0e",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -4372,20 +4700,30 @@
               "t": "chevron-droit",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Essai",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Interne",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "he": {
-          "file": "66d5597bae69",
+          "file": "890e87127306",
           "counts": {
             "esri": 12,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -4637,20 +4975,30 @@
               "t": "המונחים:",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "מבחן",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "פנימית פנימית",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "hr": {
-          "file": "b3cdacd2c046",
+          "file": "3912e3b4c27d",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -4902,20 +5250,30 @@
               "t": "kron-desno",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Test",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Unutarnji",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "hu": {
-          "file": "def2d0e0416f",
+          "file": "d9f904a6b06c",
           "counts": {
             "esri": 12,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -5167,20 +5525,30 @@
               "t": "chevron- right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Vizsgálat",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Belső",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "id": {
-          "file": "d93061cfb6a4",
+          "file": "34ed89213b25",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -5432,20 +5800,30 @@
               "t": "Chevron-right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Uji",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Internal",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "it": {
-          "file": "fc736835e4ca",
+          "file": "c4455b6b2c7d",
           "counts": {
             "esri": 12,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -5697,20 +6075,30 @@
               "t": "chevron-right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Test",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Interno",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "ja": {
-          "file": "bc194098c468",
+          "file": "9284bb2dc09f",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -5962,20 +6350,30 @@
               "t": "チェブロン右",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "テスト",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "インテリア",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "ko": {
-          "file": "988f27369233",
+          "file": "06680ef3378c",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -6227,20 +6625,30 @@
               "t": "크리스마스",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "제품정보",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "내 계정",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "lt": {
-          "file": "735c34ef637b",
+          "file": "9e03a1d07df4",
           "counts": {
             "esri": 10,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -6492,20 +6900,30 @@
               "t": "weather forecast",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Bandymas",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Vidaus",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "lv": {
-          "file": "f6b6b7b094f3",
+          "file": "9203fbc173db",
           "counts": {
             "esri": 10,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -6757,20 +7175,30 @@
               "t": "čevrona labā puse",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Tests",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Iekšējs",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "no": {
-          "file": "6a9a7433d092",
+          "file": "3abfc5fe52b6",
           "counts": {
             "esri": 12,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -7022,20 +7450,30 @@
               "t": "chevron-høyre",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Test",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Intern",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "nl": {
-          "file": "a31ea73607dc",
+          "file": "a574f2af84e1",
           "counts": {
             "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 51,
+            "machine": 53,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -7292,20 +7730,30 @@
               "t": "rechts",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Test",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Intern",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "pl": {
-          "file": "4d4e4efacf86",
+          "file": "39a83555f27e",
           "counts": {
             "esri": 7,
             "esri-check": 7,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -7557,20 +8005,30 @@
               "t": "chevron- right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Badanie",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Wewnętrzne",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "pt-br": {
-          "file": "89759e82868f",
+          "file": "89fa20d0fd18",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -7822,20 +8280,30 @@
               "t": "Chevron-direita",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Teste",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Interno",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "pt-pt": {
-          "file": "a8661e7b4f09",
+          "file": "60fe2b8b1bac",
           "counts": {
             "esri": 12,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -8087,20 +8555,30 @@
               "t": "chevron- right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Ensaio",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Interno",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "ro": {
-          "file": "64aeb5c4cf25",
+          "file": "8b2250d5c8ad",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -8352,20 +8830,30 @@
               "t": "Chevron-dreapta",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Test",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Intern",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "ru": {
-          "file": "3ef4b5b0398c",
+          "file": "4c3615d8c8e2",
           "counts": {
             "esri": 6,
             "esri-check": 8,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -8617,20 +9105,30 @@
               "t": "правый шеврон",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Тест",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Внутренний",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "sk": {
-          "file": "910927a58cd6",
+          "file": "a17a6dbad028",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -8882,20 +9380,30 @@
               "t": "chevron-right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Skúška",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Interné",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "sl": {
-          "file": "3a19b3b2e009",
+          "file": "ca5728cd2e7c",
           "counts": {
             "esri": 12,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -9147,20 +9655,30 @@
               "t": "simbol desno",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Preskus",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Notranji",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "sr": {
-          "file": "a0744a71fcfd",
+          "file": "cc1f77dc6209",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -9412,20 +9930,30 @@
               "t": "Chevron-desna",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Test",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Interno",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "sv": {
-          "file": "963a4f26dedd",
+          "file": "792775b69290",
           "counts": {
             "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 51,
+            "machine": 53,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -9682,20 +10210,30 @@
               "t": "chevron-höger",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Testa test",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Interna",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "th": {
-          "file": "0482f3fe9403",
+          "file": "579c0e1ebf9e",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -9947,20 +10485,30 @@
               "t": "ตารางงานด้านขวา",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "ทดสอบ",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "ภายใน",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "tr": {
-          "file": "73ba485d0668",
+          "file": "30e8e127beaf",
           "counts": {
             "esri": 12,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -10212,20 +10760,30 @@
               "t": "chevron-right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Test Testi",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "İç İç İç İç",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "zh-cn": {
-          "file": "545ceb21cb44",
+          "file": "12fa40a2c062",
           "counts": {
             "esri": 12,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -10477,20 +11035,30 @@
               "t": "右侧",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "测试",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "内部",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "uk": {
-          "file": "df20a8d77067",
+          "file": "b5163fa91b4b",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -10742,20 +11310,30 @@
               "t": "шеврон-право",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Тести",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Внутрішній",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "vi": {
-          "file": "65f203eeb8cb",
+          "file": "51f4e46e76ad",
           "counts": {
             "esri": 14,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -11007,20 +11585,30 @@
               "t": "Chevron- right",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "Thử",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "Nội bộ",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "zh-hk": {
-          "file": "6b05894dcb2d",
+          "file": "3667541bb9f9",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -11272,20 +11860,30 @@
               "t": "右",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "測試",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "內部",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         },
         "zh-tw": {
-          "file": "6b05894dcb2d",
+          "file": "3667541bb9f9",
           "counts": {
             "esri": 13,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 50,
+            "machine": 52,
             "stale": 0,
-            "missing": 0
+            "missing": 17
           },
           "entries": {
             "announcement": {
@@ -11537,6 +12135,16 @@
               "t": "右",
               "src": "machine",
               "h": "9274af1f085c"
+            },
+            "feedTest": {
+              "t": "測試",
+              "src": "machine",
+              "h": "640ab2bae07b"
+            },
+            "feedAudienceInternal": {
+              "t": "內部",
+              "src": "machine",
+              "h": "fc9225a1693f"
             }
           }
         }

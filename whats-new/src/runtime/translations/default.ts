@@ -6,5 +6,6 @@ export default {
   unserializableError: 'unserializable error',
   valueNewUpdatesAvailable: '{value}, new updates available',
   openLink: 'Open link',
-  noContentConfigured: 'No content configured.'
+  noContentConfigured: 'No content configured.',
+  noNotifications: 'No notifications right now.'
 }

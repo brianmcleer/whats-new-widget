@@ -2,6 +2,12 @@
 
 Newest first. Every release bumps `manifest.json` and `package.json` together.
 
+## 1.2.1 (2026-11-25)
+
+- Changed: with a feed URL set and no active messages, an app that leaves its own content blank now shows "No notifications right now." instead of "No content configured."
+- Changed: HTML inside a feed message gets consistent spacing and type for paragraphs, headings, lists, links and small text.
+- Docs: ArcGIS Online checks text fields for unsafe HTML and rejects the whole edit (error 1006). Paragraphs, bold and lists are known to save; a message using `<h4>` and `<small>` was rejected. The widget README lists what to use.
+
 ## 1.2.0 (2026-11-25)
 
 - Added: notification feed. The widget can read messages from a shared hosted table (ArcGIS Online or ArcGIS Enterprise), so a notice such as planned maintenance reaches every app that carries the widget without a republish. Messages have a type (what's new, info, maintenance, outage), an optional start and end time, and can be aimed at all apps, internal or external apps, or a list of app tags. New module `src/shared/feed.ts`; new settings section "Notification feed" with a Test button.

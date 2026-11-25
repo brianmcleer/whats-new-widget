@@ -8,7 +8,10 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "var (--calcite-color-status-do nguy hiểm, #d83020)",
         unknownError: "lỗi không rõ",
         unserializableError: "Lỗi không thể gửi đi được",
-        valueNewUpdatesAvailable: "{value}, các cập nhật có sẵn"
+        valueNewUpdatesAvailable: "{value}, các cập nhật có sẵn",
+        openLink: "Mở liên kết",
+        noContentConfigured: "No content configured.",
+        noNotifications: "No notifications right now."
       })
     }
   }

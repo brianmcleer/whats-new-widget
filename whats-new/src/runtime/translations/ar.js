@@ -10,7 +10,8 @@ System.register([], function (e) {
         unserializableError: "خطأ غير معقول",
         valueNewUpdatesAvailable: "{value}المعلومات الجديدة المتاحة",
         openLink: "وصلة مفتوحة",
-        noContentConfigured: "No content configured."
+        noContentConfigured: "No content configured.",
+        noNotifications: "No notifications right now."
       })
     }
   }

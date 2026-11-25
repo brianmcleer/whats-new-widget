@@ -8,7 +8,10 @@ System.register([], function (e) {
         varCalciteColorStatusDangerD83020: "var(--calcite-color-status-danger, #d83020)",
         unknownError: "Неизвестная ошибка",
         unserializableError: "несериализируемая ошибка",
-        valueNewUpdatesAvailable: "{value}Доступны новые обновления"
+        valueNewUpdatesAvailable: "{value}Доступны новые обновления",
+        openLink: "Открытая ссылка",
+        noContentConfigured: "No content configured.",
+        noNotifications: "No notifications right now."
       })
     }
   }

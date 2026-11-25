@@ -39,6 +39,24 @@ const NOTICE_KIND: { [k in FeedType]: string } = {
     whatsnew: 'brand'
 }
 
+// Spacing and type for the HTML a feed message carries (headings, lists, links), so a
+// message written as simple HTML reads cleanly inside the notice.
+const FEED_CSS = `
+.whats-new-feed [slot="message"] { font-size: 13px; line-height: 1.45; }
+.whats-new-feed [slot="message"] > :first-child { margin-top: 0; }
+.whats-new-feed [slot="message"] > :last-child { margin-bottom: 0; }
+.whats-new-feed [slot="message"] p { margin: 0 0 8px; }
+.whats-new-feed [slot="message"] h3, .whats-new-feed [slot="message"] h4,
+.whats-new-feed [slot="message"] h5, .whats-new-feed [slot="message"] h6 { margin: 10px 0 4px; font-size: 13px; font-weight: 600; }
+.whats-new-feed [slot="message"] ul, .whats-new-feed [slot="message"] ol { margin: 0 0 8px; padding-left: 18px; }
+.whats-new-feed [slot="message"] li { margin: 2px 0; }
+.whats-new-feed [slot="message"] a { color: var(--calcite-color-text-link, #00619b); text-decoration: underline; }
+.whats-new-feed [slot="message"] hr { border: 0; border-top: 1px solid var(--calcite-color-border-3, #dfdfdf); margin: 8px 0; }
+.whats-new-feed [slot="message"] blockquote { margin: 0 0 8px; padding-left: 10px; border-left: 3px solid var(--calcite-color-border-2, #d4d4d4); }
+.whats-new-feed [slot="message"] small { color: var(--calcite-color-text-3, #6a6a6a); }
+.whats-new-feed [slot="title"] { font-weight: 600; }
+`
+
 const readIds = (key: string): string[] => {
     try {
         const parsed = JSON.parse(window.localStorage.getItem(key) || '[]')
@@ -233,6 +251,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                 className="whats-new-feed"
                 style={{ display: 'flex', flexDirection: 'column', gap: 8, padding: '0.75rem 0.75rem 0.25rem' }}
             >
+                <style>{FEED_CSS}</style>
                 {feedMessages.map((m) => (
                     <calcite-notice
                         key={m.id}
@@ -246,7 +265,6 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
                         {m.html && (
                             <div
                                 slot="message"
-                                style={{ lineHeight: 1.45 }}
                                 dangerouslySetInnerHTML={{ __html: m.html }}
                             />
                         )}
@@ -320,7 +338,7 @@ export default function Widget (props: AllWidgetProps<IMConfig>): React.ReactEle
         if (!feed && !local) {
             return (
                 <div style={{ padding: '12px 16px', color: '#666' }}>
-                    {t('noContentConfigured')}
+                    {feedOn ? t('noNotifications') : t('noContentConfigured')}
                 </div>
             )
         }
